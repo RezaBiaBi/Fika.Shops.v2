@@ -1,0 +1,353 @@
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <title>Index ( Home Page )</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Load Uikit Css -->
+    <link rel="stylesheet" href="www-root/library/uikit/css/uikit.css">
+    <link rel="stylesheet" href="www-root/library/uikit/css/uikit.min.css">
+    <!-- Load Uikit Css -->
+
+    <!-- Load Uikit Javascript -->
+    <script src="www-root/library/uikit/js/uikit.js"></script>
+    <script src="www-root/library/uikit/js/uikit.min.js"></script>
+    <!-- Load Uikit Javascript -->
+
+    <!-- Load Remix Icon -->
+    <link rel="stylesheet" href="www-root/library/remix-icon/fonts/remixicon.css">
+    <!-- Load Remix Icon -->
+
+    <!-- Load Phosphor Icon -->
+    <link rel="stylesheet" href="www-root/library/phosphor-icon/icons.css">
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <!-- Load Phosphor Icon -->
+
+    <!-- Load Swiper Slider Css -->
+    <link rel="stylesheet" href="www-root/library/swiper-slider/css/swiper.min.css">
+    <!-- Load Swiper Slider Css -->
+
+    <!-- Load Main Css -->
+    <link rel="stylesheet" href="www-root/css/main.css">
+    <!-- Load Main Css -->
+</head>
+<body>
+    <!-- Header -->
+    <header id="header-section" class="uk-width-1-1 uk-padding-small">
+        <div class="uk-container uk-container-expand header-container">
+            <!-- Top Menu -->
+            <nav class="uk-navbar uk-navbar-container dm-bg-white" uk-navbar="mode: click">
+                <div id="main-logo" class="uk-navbar-right">
+                    
+                    <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon href="#offcanvas-usage" data-uk-toggle></a>
+                    <!--Logo Main-->
+                    <a class="uk-navbar-item uk-logo">
+                        <img src="www-root/img/logo.png" alt=""/>
+                        <div class="logo-type uk-display-inline-block uk-width-auto">
+                            <span class="uk-text-bolder dm-font-size">فیکا شاپ</span>
+                            <span class="uk-display-block dm-color-silver dm-font-size-small ttl">فروشگاه معتبر آنلاین</span>
+                        </div>
+                    </a>
+
+                    <!--Search Box-->
+                    <div id="nav-search" class="uk-navbar-item uk-visible@m">
+                        <form action="" autocomplete="off" method="get" class="uk-search uk-search-navbar uk-position-relative">
+                            <a class="more-search-btn" role="button"><img src="www-root/img/more-vertical.png" alt="" srcset=""></a>
+                            <input name="q" class="uk-search-input search-input uk-text-light" type="search" placeholder="جستجو در بین هزاران محصول و برند...">
+                            <button type="submit" data-uk-search-icon></button>
+                            <div class="uk-position-absolute rad-ten uk-box-shadow-medium bg-w search-container"></div>
+                        </form>
+                    </div>
+
+                </div>
+                <!--Left Navbar (NavButtons)-->
+                <div id="main-cts" class="uk-navbar-left">
+
+                    <div class="uk-hidden@m">
+                        <a class="uk-navbar-toggle" href="#" data-uk-icon="icon: search; ratio: 1.3"></a>
+
+                        <div class="uk-navbar-dropdown" uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: .header; pos: bottom-justify; boundary-align: true; offset:-1; animation: uk-animation-slide-top-medium; duration: 350">
+
+                            <div class="uk-grid-small uk-flex-middle" data-uk-grid>
+                                <div class="uk-width-expand">
+                                    <form action="" autocomplete="off" method="get" class="uk-search uk-search-navbar uk-width-1-1 uk-position-relative">
+                                        <input name="q" class="uk-search-input search-input-sm uk-text-light" type="search" placeholder="جستجو در کالاها... " autofocus>
+                                    </form>
+                                </div>
+                                <div class="uk-width-auto">
+                                    <a class="uk-navbar-dropdown-close" href="#" data-uk-close></a>
+                                </div>
+                            </div>
+
+                            <div class="rad-ten search-container-sm"></div>
+                        </div>
+                    </div>
+
+                    <div class="uk-navbar-item uk-text-center uk-visible@m">
+                        <a id="contact-btn" class="header-btns uk-margin-small-left">
+                            <span class="dm-bold-text-lg dm-color-black dm-font-size">
+                                <span>1234567</span>&ensp;<span class="dm-color-silver">021</span>
+                            </span>
+                            <span class="uk-width-auto"><img src="www-root/img/phone.png"/></span>
+                        </a>
+                        <a id="auth-btn" class="header-btns uk-margin-small-left">
+                            <span class="dm-bold-text-lg dm-color-silver dm-font-size">
+                                ورود / عضویت
+                            </span>
+                        </a>
+                        <a id="cart-btn" class="uk-position-relative">
+                            <span id="cart-count" class="dm-bold-text-lg dm-font-size uk-position-absolute">
+                                <span class="dm-color-white">10</span>
+                            </span>
+                            <span class="uk-width-auto"><img src="www-root/img/cart.png"/></span>
+                        </a>
+                    </div>
+                    <form id="logout-form" asp-action="Logout" asp-controller="Profile" method="post"></form>
+
+                </div>
+            </nav>
+            <!-- Top Menu -->
+
+            <!-- Bottom Menu -->
+            <div class="uk-width-1-1 uk-margin-top menu-container menu-boundary">
+                <div class="uk-grid uk-grid-match uk-child-width-auto" uk-height-match="target: #main-menu" data-uk-grid>
+                    <div id="main-menu" class="main-menu">
+                        <div class="uk-inline dm-bg-silver">
+                            <a id="menu-btn" class="uk-position-relative pointer">
+                                <span class="uk-width-auto"><img src="www-root/img/menu-blue.png"/></span>
+                                <span class="uk-margin-small-right">دسته بندی کالاها</span>
+                                <span class="uk-float-left uk-text-left" style="margin-top: 5px;">
+                                    <img src="www-root/img/menu-nav-left.png" class=""/>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="menu" class="uk-width-expand uk-visible@m">
+                        <nav class="uk-navbar uk-padding-remove" uk-navbar>
+                            <div class="uk-navbar-right">
+                                <ul class="uk-navbar-nav">
+                                    <li class="uk-active"><a href="#">تماس باما</a></li>
+                                    <li><a href="#">درباره ما</a></li>
+                                    <li><a href="#">قوانین و مقررات</a></li>
+                                    <li><a href="#">فروشنده شوید</a></li>
+                                    <li><a href="#">سوالات متداول</a></li>
+                                </ul>
+                            </div>
+                            <div class="uk-navbar-left">
+                                <div class="uk-inline">
+                                    <a id="location-btn" class="uk-position-relative pointer">
+                                        <span class="uk-width-auto"><img src="www-root/img/address.png"/></span>
+                                        <span class="">شهر خودرا انتخاب کنید</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom Menu -->
+        </div>
+    </header>
+    <!-- Header -->
+
+    <!-- Mobile Menu -->
+    <div id="offcanvas-usage" class="dm-bg-white" uk-offcanvas="flip: true">
+        <div class="uk-offcanvas-bar dm-bg-white">
+            <div>
+                <h1 class="dm-color-black uk-text-bold uk-text-center">شورای اسلامی شهر کرج</h1>
+            </div>
+            <div>
+                <div class="uk-width-1-1 dm-border-bottom-first dm-margin-top-small"></div>
+            </div>
+            <div class="uk-margin-small-top">
+                <ul>
+                    <li class="dm-padding-very-small uk-padding-remove-horizontal dm-border-light-silver-bottom">
+                        <a href="" class="uk-display-block">
+                            <span class="ph-check-circle dm-font-size-very-big dm-vertical-align-middle dm-color-second"></span>
+                            <span class="dm-color-light-black">صفحه اصلی</span>
+                        </a>
+                    </li>
+                    <li class="dm-padding-very-small uk-padding-remove-horizontal dm-border-light-silver-bottom">
+                        <a href="" class="uk-display-block">
+                            <span class="ph-check-circle dm-font-size-very-big dm-vertical-align-middle dm-color-second"></span>
+                            <span class="dm-color-light-black">صفحه اصلی</span>
+                        </a>
+                    </li>
+                    <li class="dm-padding-very-small uk-padding-remove-horizontal dm-border-light-silver-bottom">
+                        <a href="" class="uk-display-block">
+                            <span class="ph-check-circle dm-font-size-very-big dm-vertical-align-middle dm-color-second"></span>
+                            <span class="dm-color-light-black">صفحه اصلی</span>
+                        </a>
+                    </li>
+                    <li class="dm-padding-very-small uk-padding-remove-horizontal dm-border-light-silver-bottom">
+                        <a href="" class="uk-display-block">
+                            <span class="ph-check-circle dm-font-size-very-big dm-vertical-align-middle dm-color-second"></span>
+                            <span class="dm-color-light-black">صفحه اصلی</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Menu -->
+
+
+    <main id="main" class="uk-width-1-1 uk-height-1-1 uk-padding-remove uk-margin-remove">
+        <div id="slider-banner-section ukwidth-1-1">
+            <div class="uk-container uk-container-large">
+                <div class="uk-grid-small uk-grid-match uk-child-width-auto" data-uk-grid>
+                    <div class="uk-width-3-5">
+                        <div id="main-slider" class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <a class="swiper-slide" href="#">
+                                    <picture>
+                                        <source media="(max-width: 425px)" srcset="www-root/img/banner5.png">
+                                        <source media="(min-width: 426px)" srcset="www-root/img/banner5.png">
+                                        <img src="www-root/img/banner5.png" alt="">
+                                    </picture>
+                                </a>
+                                <a class="swiper-slide" href="#">
+                                    <picture>
+                                        <source media="(max-width: 425px)" srcset="www-root/img/slide2.png">
+                                        <source media="(min-width: 426px)" srcset="www-root/img/slide2.png">
+                                        <img src="www-root/img/slide2.png" alt="">
+                                    </picture>
+                                </a>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination swiper-pagination-white"></div>
+                            <!-- Navigation -->
+                            <div class="swiper-button-next swiper-button-white"></div>
+                            <div class="swiper-button-prev swiper-button-white"></div>
+                        </div>
+                    </div>
+                    <div class="uk-width-expand">
+                        <div id="banners" class="uk-width-1-1 uk-padding-remove">
+                            <div class="uk-grid-small uk-grid-match uk-child-width-1-1" data-uk-grid>
+                                <div>
+                                    <div class="uk-width-1-1 dm-border-silver">
+                                        <img src="www-root/img/banner1.png" class="" data-uk-img/>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="uk-width-1-1 dm-border-silver">
+                                        <img src="www-root/img/banner2.png" class="" data-uk-img/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+    <!-- Footer Section -->
+    <footer class="uk-width-1-1 uk-margin-top" style="margin-top: 200px !important;">
+        <div id="main-footer" class="uk-width-1-1 dm-border-top-second">
+            <div class="uk-container uk-container-large">
+                <div class="uk-child-width-1-2@m uk-child-width-1-1 uk-grid-medium uk-margin-top" data-uk-grid>
+                    <div class="uk-width-1-5">
+                        <div class="uk-child-width-1-1 uk-grid-small" data-uk-grid>
+                            <div class="">
+                                <a class="uk-navbar-item uk-text-right uk-logo" style="justify-content: right;">
+                                    <img src="www-root/img/logo.png" width="45" alt=""/>
+                                    <div class="logo-type uk-display-inline-block uk-width-auto">
+                                        <span class="uk-text-bolder dm-font-size">فیکا شاپ</span>
+                                        <span class="uk-display-block dm-color-silver dm-font-size-small ttl">فروشگاه معتبر آنلاین</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="">
+                                <p class="uk-text-justify dm-color-silver dm-bold-text-sm">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، یای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="uk-width-expand uk-margin-top">
+                        <div class="uk-child-width-1-3@m uk-child-width-1-1 uk-flex-left uk-grid-small" data-uk-grid>
+                            <div class="uk-flex-left uk-text-right">
+                                <img src="www-root/img/footer-link.png" />
+                                <div class="uk-display-inline-block uk-width-auto">
+                                    <span class="uk-text-bolder dm-color-first dm-font-size">لینک های مفید</span>
+                                </div>
+                            </div>
+                            <div class="uk-flex-left uk-text-right">
+                                <img src="www-root/img/footer-phone.png" />
+                                <div class="uk-display-inline-block uk-width-auto">
+                                    <span class="uk-text-bolder dm-color-first dm-font-size">ارتباط با ما</span>
+                                </div>
+                            </div>
+                            <div class="uk-flex-left uk-text-right">
+                                <img src="www-root/img/footer-copy.png" />
+                                <div class="uk-display-inline-block uk-width-auto">
+                                    <span class="uk-text-bolder dm-color-first dm-font-size">نماد ها</span>
+                                </div>
+                            </div>
+
+                            <div class="uk-width-1-1 uk-margin-top">
+                                <div id="footer-items" class="uk-width-1-1 uk-padding-small dm-bg-white dm-border-radius-small">
+                                    <div class="uk-child-width-1-3@m uk-child-width-1-1 uk-grid-divider uk-flex-left uk-grid-small" data-uk-grid>
+                                        <div class="uk-padding-small">
+                                            <a href="" class="uk-display-inline-block uk-width-1-1">
+                                                <span class="dm-font-size">صفحه اصلی</span>
+                                                <span class="uk-float-left dm-color-silver dm-font-size-small ttl">
+                                                    <img src="www-root/img/menu-nav-left.png" />
+                                                </span>
+                                            </a>
+                                            <a href="" class="uk-display-inline-block uk-width-1-1 uk-margin-small-top">
+                                                <span class="dm-font-size">تماس باما</span>
+                                                <span class="uk-float-left dm-color-silver dm-font-size-small ttl">
+                                                    <img src="www-root/img/menu-nav-left.png" />
+                                                </span>
+                                            </a>
+                                            <a href="" class="uk-display-inline-block uk-width-1-1 uk-margin-small-top">
+                                                <span class="dm-font-size">فروشنده شوید</span>
+                                                <span class="uk-float-left dm-color-silver dm-font-size-small ttl">
+                                                    <img src="www-root/img/menu-nav-left.png" />
+                                                </span>
+                                            </a>
+                                            <a href="" class="uk-display-inline-block uk-width-1-1 uk-margin-small-top">
+                                                <span class="dm-font-size">قوانین و مقررات</span>
+                                                <span class="uk-float-left dm-color-silver dm-font-size-small ttl">
+                                                    <img src="www-root/img/menu-nav-left.png" />
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="uk-container uk-container-large uk-padding-small uk-margin-top dm-border-silver-top-dashed">
+                <div class="uk-child-width-1-1 uk-grid-small" data-uk-grid>
+                    
+                </div>
+            </div>
+    </footer>
+    <!-- Footer Section -->
+
+    <!-- Load Jquery -->
+<script src="www-root/library/jquery/jquery-3.6.0.js"></script>
+<!-- Load Jquery -->
+
+<!-- Load Swiper Slider JavaScript -->
+<script src="www-root/library/swiper-slider/js/swiper.min.js"></script>
+<!-- Load Swiper Slider JavaScript -->
+
+<!-- Load Main JavaScript -->
+<script src="www-root/js/main.js"></script>
+<!-- Load Main JavaScript -->
+</body>
+</html>
