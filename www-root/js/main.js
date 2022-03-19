@@ -1,3 +1,44 @@
+var Berakpoints1 = {
+    1300: {
+        slidesPerGroup: 4,
+        slidesPerView: 5,
+        spaceBetween: 35,
+    },
+    1200: {
+        slidesPerGroup: 4,
+        slidesPerView: 5,
+        spaceBetween: 25,
+    },
+    960: {
+        slidesPerGroup: 3,
+        slidesPerView: 4,
+        spaceBetween: 30,
+    },
+    640: {
+        slidesPerGroup: 2,
+        slidesPerView: 3,
+        spaceBetween: 25,
+    },
+    550: {
+        speed: 300,
+        slidesPerGroup: 2,
+        slidesPerView: 2,
+        spaceBetween: 60,
+    },
+    420: {
+        speed: 300,
+        slidesPerGroup: 2,
+        slidesPerView: 2,
+        spaceBetween: 15,
+    },
+    340: {
+        speed: 300,
+        slidesPerGroup: 1,
+        slidesPerView: 1,
+        spaceBetween: 10,
+    }
+}
+
 const mainSlider = new Swiper('#main-slider', {
     // Optional parameters
     direction: 'horizontal',
@@ -20,6 +61,39 @@ const mainSlider = new Swiper('#main-slider', {
         clickable: true,
     }
 });
+
+const newestProducts = new Swiper('#newest-products.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+    speed: 900,
+    spaceBetween: 25,
+    slidesPerView: 1,
+    cssWidthAndHeight: true,
+    visibilityFullFit: true,
+    freeMode: false,
+    autoResize: true,
+    lazy: {
+        loadPrevNext: true,
+        loadOnTransitionStart: false
+    },
+    breakpoints: Berakpoints1,
+    // pagination: {
+    //     el: '#most-signed-demands .swiper-pagination',
+    //     type: 'progressbar',
+    //     clickable: true
+    // },
+    navigation: {
+        nextEl: '#newest-products-section .swiper-button-next',
+        prevEl: '#newest-products-section .swiper-button-prev',
+    },
+    // navigation: {
+    //     nextEl: '#most-signed-demands .hb-swiper-prev',
+    //     prevEl: '#most-signed-demands .hb-swiper-next',
+    // }
+});
+
+
 
 const gallerySlider = new Swiper('#gallery-slider', {
     direction: 'horizontal',

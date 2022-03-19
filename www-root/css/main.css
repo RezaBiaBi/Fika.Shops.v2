@@ -149,7 +149,8 @@ button {
 }
 
 .dm-color-light-silver {
-    color: rgba(255, 255, 255, 0.5);
+    /* color: rgba(255, 255, 255, 0.5); */
+    color: rgba(0, 0, 0, 0.35);
 }
 
 /* Background and Color */
@@ -361,6 +362,24 @@ button {
 
 
 
+/* Other Custom Css */
+.uk-grid-divider > :not(.uk-first-column)::before {
+    content: "";
+    position: absolute;
+    top: calc(8%);
+    bottom: 0;
+    border-left: 1.6px solid #e5e5e5;
+    height: 80%;
+  }
+  .product-sliders.swiper-container .swiper-wrapper {
+      margin: 5px;
+  }
+/* Other Custom Css */
+
+
+
+
+
 
 
 
@@ -453,18 +472,75 @@ form.uk-search input{
 }
 #cart-btn #cart-count{
     position: absolute;
-    top: -5px;
-    left: -5px;
+    top: -15px;
+    left: -15px;
     text-align: center;
     background: #000;
     border-radius: 100%;
-    width: 15px;
-    height: 15px;
+    /* width: 15px;
+    height: 15px; */
     font-size: 13px;
 }
 #cart-count span {
     margin-bottom: 2px;
 }
+
+
+
+/* Product Sliders Styles */
+.product-sliders .swiper-wrapper{height: auto;}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-family: swiper-icons;
+    font-size: 18px;
+    text-transform: none !important;
+    letter-spacing: 0;
+    text-transform: none;
+    font-variant: initial;
+    line-height: 1;
+    font-weight: 900;
+}
+
+.dm-box-shadow{
+    box-shadow: 0px 0px 24px rgba(1, 131, 255, 0.3);
+}
+#newest-products .product-slide{
+    background: #FFFFFF;
+    max-height: 290px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+#newest-products .product-slide:hover{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 24px rgba(1, 131, 255, 0.3);
+}
+
+.product-action {
+    padding: 10px 15px;
+    margin: 5px 0px;
+}
+.product-discount {
+    /* position: absolute;
+    height: 20px;
+    right: 0;
+    top: -26px; */
+    /* color: #fff; */
+    /* background: #0183FF; */
+    background: #EEEEEE;
+    color: #000000;
+    opacity: 0.5;
+    padding: 0px 6px;
+}
+.product-discount:hover {
+    /* position: absolute;
+    height: 20px;
+    right: 0;
+    top: -26px; */
+    /* color: #fff; */
+    background: #EEEEEE;
+    padding: 0px 6px;
+}
+/* Product Sliders Styles */
+
 
 
 
@@ -762,6 +838,13 @@ form.uk-search input{
         font-size: 12px;
     }
     /* Council History */
+}
+
+@media only screen and (max-width: 340px) {
+    .product-sliders .product-slide{
+        width: 245px;
+        max-width: 245px;
+    }
 }
 
 /* Responsive */
