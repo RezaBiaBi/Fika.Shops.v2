@@ -198,7 +198,7 @@ button {
 }
 
 .dm-border-light-silver {
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .dm-border-light-silver-bottom {
@@ -581,236 +581,18 @@ form.uk-search input{
 
 
 
-/* Index Style */
-#first-section {
-    background: url("../../www-root/img/slider-bg.png") no-repeat center;
-    background-size: cover;
-}
-
-#main-header {
-    background: url("../../www-root/img/header-bg.png") no-repeat center;
-    border-radius: 10px;
-}
-
-.dm-date-padding {
-    padding: 5px 15px !important;
-}
-
-#council-in-medias > div:last-child, #newest-notes > div:last-child {
-    border-bottom: none !important;
-}
-
-#last-news-btn > .uk-active > a {
-    padding: 0 7px !important;
-    background: #FFCE71 !important;
-    color: #FFFFFF;
-    border-radius: 5px;
-}
-
-#last-news-btn > li > a:hover {
-    padding: 0 7px !important;
-    border-radius: 5px !important;
-}
-
-.dm-last-news-btn {
-    padding: 0 7px !important;
-    background: #FCFCFC !important;
-    color: #FFFFFF;
-    border-radius: 5px;
-}
-
-#last-news-btn > li {
-    padding: 0;
-}
-
-#last-news-btn > li:last-child {
-    padding-left: 15px;
-}
-
-#last-news > li > div:last-child {
-    border: none !important;
-}
-
-#newest-podcast > li {
-    background: #FEFEFE !important;
-}
-
-#newest-podcast > li > a::before {
-    display: none !important;
-}
-
-#newest-podcast > li.uk-open > a {
-    color: #0094D2 !important;
-}
-
-/*input[type="range"].dm-audio-player-range {*/
-/*    overflow: hidden;*/
-/*    -webkit-appearance: none;*/
-/*    background-color: #fff;*/
-/*    height: 8px !important;*/
-/*}*/
-
-/*input[type='range'].dm-audio-player-range::-webkit-slider-runnable-track {*/
-/*    height: 8px;*/
-/*    -webkit-appearance: none;*/
-/*    color: #0094D2;*/
-/*}*/
-
-/*input[type='range'].dm-audio-player-range::-webkit-slider-thumb {*/
-/*    width: 0px;*/
-/*    -webkit-appearance: none;*/
-/*    height: 8px;*/
-/*    cursor: pointer;*/
-/*    background: #0094D2;*/
-/*    box-shadow: -80px 0 0 80px #0094D2;*/
-/*}*/
-
-#websites-slider {
-    background: url("../img/websites-slider.png") center no-repeat;
-}
-
-/* Index Style */
-
 /* Footer Style */
-#main-footer {
-    background: #FCFCFC;
-}
-
-#footer-logo {
-    margin-top: -50px;
-}
-
-.dm-sign-up-newsletter-btn {
-    padding: 8px 20px;
-}
-
 /* Footer Style */
 
 /* Contact Us Style */
-.faq-parent > li > a::before {
-    display: none !important;
-}
-
-#map {
-    height: 359px !important;
-}
-
 /* Contact Us Style */
 
-/* Single Blog Style */
-.dm-audio-player-img {
-    width: 130px;
-    height: 130px;
-}
 
-/* Single Blog Style */
-
-/* Blog Category */
-.dm-margin-right-remove {
-    margin-right: 0 !important;
-}
-
-.dm-margin-left-remove {
-    margin-left: 0 !important;
-}
-
-.dm-blog-category {
-    padding: 7px 30px !important;
-}
-
-.dm-blog-category:hover {
-    background: #0094D2 !important;
-    color: #FFFFFF !important;
-}
-
-/* Blog Category */
-
-/* Gallery Blog Category Style */
-.dm-blog-gallery-category-img {
-    width: 150px !important;
-    height: 150px !important;
-}
-
-.dm-blog-gallery-category-mark-icon, .dm-blog-gallery-category-mark-counter {
-    margin-top: -10px !important;
-}
-
-.dm-blog-gallery-category-see-more-btn {
-    padding: 7px 15px !important;
-}
-
-/* Gallery Blog Category Style */
-
-/* Blog Gallery Single Style */
-.dm-gallery--single-btn:hover {
-    opacity: 1 !important;
-    background: #0094D2 !important;
-    color: #FFFFFF !important;
-    border: none !important;
-}
-
-.dm-gallery-single-btn:hover {
-    background: #0094D2 !important;
-}
-
-.dm-gallery-single-btn:hover > * {
-    color: #FFFFFF !important;
-}
-
-/* Blog Gallery Single Style */
-
-/* Comision Category Style */
-.dm-comision-user-bg {
-    background: url("../img/user-bg.png") center no-repeat;
-    background-size: cover;
-}
-
-/* Comision Category Style */
-
-/* About Karaj Cateogry Style */
-#about-karaj-categories > li.uk-active > a {
-    background: url("../img/about-karaj-category-btn-img.png") no-repeat;
-    background-size: cover;
-    color: #fff !important;
-}
-
-/* About Karaj Cateogry Style */
-
-/* Rules Category Style */
-.dm-rule-download-btn {
-    padding: 5px 25px;
-}
-
-/* Rules Category Style */
 
 /* Profile Style */
-#profile-date-list-parent > li > a::before, #profile-last-request-parent > li > a::before {
-    display: none !important;
-}
-
 /* Profile Style */
 
-/* Transparency Index Style */
-#transparency-index {
-    background-image: url("../img/transparency-index.png") !important;
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat;
-    min-height: 100vh !important;
-    max-height: 100vh !important;
-    min-width: 100% !important;
-    max-width: 100% !important;
-}
-#transparency-header {
-    background-image: url("../img/header-bg.png");
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat;
-}
-.dm-transparency-img-padding {
-    padding: 14px;
-}
-/* Transparency Index Style */
+
 
 /* Responsive */
 @media only screen and (max-width: 640px) {
