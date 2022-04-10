@@ -1,0 +1,49 @@
+#contact-information-section .contact-map-section{
+    width: 35%;
+    max-width: 40%;
+    min-width: 35%;
+}
+
+
+
+
+/* Contact Form Styles */
+#contact-form .dm-input,
+#contact-form .dm-textarea{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: right;
+    background-color: #FFFF !important;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+#contact-form .dm-button{
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF !important;
+    box-sizing: border-box;
+}
+#contact-form .dm-button:hover{
+    color: #0183FF;
+    background-color: #ffffff;
+    border: 1px solid #0183FF !important;
+}
+/* Contact Form Styles */
+
+
+/* FAQ Style */
+.faq-section .faq-container .uk-accordion-title{
+    border-color: rgba(0, 0, 0, 0.05) !important;
+}
+.faq-section .faq-container .uk-accordion-title:hover {
+    color: #0183FF;
+    text-decoration: none;
+}
+
+.faq-section .faq-container .faq-item.uk-open .uk-accordion-title{
+    color: #0183FF;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+/* FAQ Style */

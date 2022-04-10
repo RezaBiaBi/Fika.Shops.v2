@@ -91,6 +91,7 @@ button {
 
 .dm-bg-silver {
     background: #F5F5F5;
+    /* background: #F8F8F9; */
 }
 
 .dm-bg-light-silver {
@@ -213,6 +214,10 @@ button {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.dm-border-radius-xsmall {
+    border-radius: 2px;
+}
+
 .dm-border-radius-small {
     border-radius: 5px;
 }
@@ -248,8 +253,20 @@ button {
     padding: 5px;
 }
 
+.dm-padding-xsmall {
+    padding: 5px;
+}
+
 .dm-padding-small {
     padding: 10px;
+}
+
+.dm-padding-large {
+    padding: 25px;
+}
+
+.dm-padding-xlarge {
+    padding: 35px;
 }
 
 .dm-padding {
@@ -376,6 +393,31 @@ button {
   }
 /* Other Custom Css */
 
+/* Form Custom Styles */
+
+form .dm-input,
+form .dm-textarea{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: right;
+    background-color: #FFFF !important;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+form .dm-button{
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF !important;
+    box-sizing: border-box;
+}
+form .dm-button:hover{
+    color: #0183FF;
+    background-color: #ffffff;
+    border: 1px solid #0183FF !important;
+}
+
+/* Form Custom Styles */
 
 
 
@@ -582,6 +624,14 @@ form.uk-search input{
 
 
 /* Footer Style */
+#main-footer{
+    background: rgba(248, 248, 249, 1);
+}
+
+#main-footer #footer-items{
+    background: #FFFFFF;
+    border-radius: 15px 15px 15px 0px;
+}
 /* Footer Style */
 
 /* Contact Us Style */
