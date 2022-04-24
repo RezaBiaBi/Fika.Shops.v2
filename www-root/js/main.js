@@ -460,3 +460,20 @@ let darkMode = window.matchMedia('(prefers.color.scheme:dark)');
 if (darkMode) {
     
 }
+
+
+// Show More Content Of Service Category
+function showMore() {
+    // debugger;
+    var box = document.getElementById('category-info');
+    var btn = document.getElementById("more-category-info-btn");
+    if (box.classList[4] === "dm-close-category-info") {
+        box.classList.remove("dm-close-category-info");
+        box.classList.add("dm-open-category-info");
+        btn.textContent = "مشاهده کمتر";
+    } else {
+        box.classList.remove("dm-open-category-info");
+        box.classList.add("dm-close-category-info");
+        btn.textContent = "مشاهده بیشتر";
+    }
+}

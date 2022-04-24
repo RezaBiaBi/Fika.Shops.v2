@@ -1,0 +1,122 @@
+
+#more-category-info-btn{
+    padding: 5px 15px;
+}
+.dm-close-category-info {
+    height: 250px !important;
+    overflow: hidden;
+}
+#category-info{
+    overflow-y: none;
+    transition: overflow-y 0.35s ease-in-out;
+}
+#category-info:hover{
+    overflow-y: auto;
+}
+
+
+/* Product Pagination Styles */
+
+#pagination-section .uk-pagination li{
+    font-size: 18px;
+    padding: 0px 10px;
+    min-width: 40px;
+    width: 50px;
+}
+
+#pagination-section .uk-pagination li:hover,
+#pagination-section .uk-pagination li.uk-active{
+    background: #0183FF;
+}
+
+#pagination-section .uk-pagination li:hover *,
+#pagination-section .uk-pagination li.uk-active *{
+    color: #FFF;
+}
+
+#pagination-section .uk-pagination li:not(#pagination-section .uk-pagination li:last-child){
+    margin-left: 5px;
+}
+
+#pagination-section .uk-pagination li:first-child,
+#pagination-section .uk-pagination li:last-child{
+    padding-top: 8px;
+}
+
+#pagination-section .uk-pagination li a{
+    /* font-size: 14px; */
+}
+/* Product Pagination Styles */
+
+
+/* Product Filter Section */
+
+#products-filter-section.dm-close-menu {
+    width: 70px;
+    min-width: unset !important;
+    max-width: unset !important;
+    transition: all 0.25s ease !important;
+}
+#products-filter-section.dm-close-menu button#products-filter-btn{
+    transition: all 0.25s ease !important;
+    text-align: center !important;
+    width: 100%;
+
+}
+
+#products-filter-section.dm-close-menu button#products-filter-btn .btn-icon{
+    margin-right: 0px;
+}
+
+#products-filter-section,
+#products-filter-section.dm-open-menu{
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    transition: all 0.25s ease !important;
+}
+#products-filter-section.dm-open-menu button#products-filter-btn .btn-icon{
+    margin-right: 10px;
+}
+
+#products-filter-section button#products-filter-btn{
+    min-height: 43px;
+    box-sizing: border-box;
+    transition: all 0.25s ease !important;
+}
+/* Product Filter Section */
+
+
+/* Product Box Styles */
+.product-box{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    background: #FFFFFF;
+}
+.product-box:hover{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 24px rgba(1, 131, 255, 0.3);
+}
+/* Product Box Styles */
+
+
+/* Product Filter Form Custom Styles */
+
+#products-filter-section .uk-checkbox{
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    transition: .2s ease-in-out;
+    transition-property: background-color,border;
+}
+
+#products-filter-section .uk-checkbox:checked,
+#products-filter-section .uk-checkbox:indeterminate,
+#products-filter-section .uk-radio:checked {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2214%22%20height%3D%2211%22%20viewBox%3D%220%200%2014%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23fff%22%20points%3D%2212%201%205%207.5%202%205%201%205.5%205%2010%2013%201.5%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+    background-color: #0183FF !important;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border-color: transparent;
+  }
+/* Product Filter Form Custom Styles */

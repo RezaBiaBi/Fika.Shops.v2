@@ -7,6 +7,24 @@
  #dm is specific name for Css Classes
  */
 
+/* ph Custom Icon Styles*/
+[class^="ph-"]::before, [class*=" ph-"]::before {
+    font: normal normal normal 1em/1 "Phosphor";
+    color: inherit;
+    flex-shrink: 0;
+    speak: none;
+    text-transform: none;
+    text-decoration: inherit;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-top: 2px;
+    top: 4px;
+    position: relative;
+  }
+/* ph Custom Icon Styles*/
+
+
 /* General Css */
 body * {
     font-family: "IRANSans" !Important;
@@ -32,7 +50,7 @@ button {
 }
 
 * {
-    transition: all 0.25s ease;
+    transition: all 0.25s ease !important;
 }
 
 a {
@@ -90,7 +108,8 @@ button {
 }
 
 .dm-bg-silver {
-    background: #F5F5F5;
+    /* background: #F5F5F5; */
+    background: #F8F8F9;
     /* background: #F8F8F9; */
 }
 
@@ -157,6 +176,28 @@ button {
 /* Background and Color */
 
 /* Border abd Border Radius */
+
+.dm-border-first-buttom-filter{
+    width: 35px;
+    height: 3.2px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #0183FF;
+    background-color: #0183FF;
+}
+.dm-border-silver-buttom-filter{
+    width: 15px;
+    height: 2.5px;
+    box-sizing: border-box;
+    background-color: #D0E3ED;
+    border-bottom: 1px solid #D0E3ED;
+    /* border-left: 1px solid rgba(255, 255, 255, 0.3); */
+}
+.dm-border-bottom-filter{
+    width: 100%;
+    margin-top: 7.5%;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
 
 .dm-border-bottom-first {
     border-bottom: 1px solid #0183FF;
@@ -419,8 +460,38 @@ form .dm-button:hover{
 
 /* Form Custom Styles */
 
+/* Main Pagination Styles */
 
+#pagination-section .uk-pagination li{
+    font-size: 18px;
+    padding: 0px 10px;
+    min-width: 40px;
+    width: 50px;
+}
 
+#pagination-section .uk-pagination li:hover,
+#pagination-section .uk-pagination li.uk-active{
+    background: #0183FF;
+}
+
+#pagination-section .uk-pagination li:hover *,
+#pagination-section .uk-pagination li.uk-active *{
+    color: #FFF;
+}
+
+#pagination-section .uk-pagination li:not(#pagination-section .uk-pagination li:last-child){
+    margin-left: 5px;
+}
+
+#pagination-section .uk-pagination li:first-child,
+#pagination-section .uk-pagination li:last-child{
+    padding-top: 8px;
+}
+
+#pagination-section .uk-pagination li a{
+    /* font-size: 14px; */
+}
+/* Main Pagination Styles */
 
 
 
@@ -475,11 +546,13 @@ form.uk-search input{
 #nav-search .uk-search-icon{
     left: -25px;
 }
-#nav-search .uk-search-icon svg{
+#nav-search .uk-search-icon svg,
+.uk-search-icon svg{
     width:20px;
     color: #000;
 }
-#nav-search .uk-search-icon svg *{
+#nav-search .uk-search-icon svg *,
+.uk-search-icon svg *{
     stroke-width: 1.7;
 }
 #nav-search .uk-search-navbar {
