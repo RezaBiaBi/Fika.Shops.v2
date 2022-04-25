@@ -1,3 +1,44 @@
+new Swiper('#img-container .swiper-container', {
+    loop: false,
+    lazy: true,
+    spaceBetween: 7,
+    centeredSlides: false,
+    grabCursor: true,
+    scrollbar: {
+        el: '.swiper-scrollbar',
+        hide: false,
+    },
+    breakpoints: {
+        1200: {
+            slidesPerGroup: 1,
+            slidesPerView: 6,
+            spaceBetween: 7,
+        },
+        960: {
+            slidesPerGroup: 1,
+            slidesPerView: 5,
+            spaceBetween: 7,
+        },
+        640: {
+            slidesPerGroup: 1,
+            slidesPerView: 4,
+            spaceBetween: 7,
+        },
+        320: {
+            slidesPerGroup: 1,
+            slidesPerView: 3,
+            spaceBetween: 7,
+        }
+    }
+});
+
+
+
+
+
+
+
+
 function showFilterMenu() {
     var filterForm = $('#products-filter-section');
     var btnFilter = $('#products-filter-section #products-filter-btn');

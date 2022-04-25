@@ -233,7 +233,7 @@
                                                             <div id="order-feedbacks" class="swiper-container feedbacks-slider">
                                                                 <div class="swiper-wrapper">
                                                                     <div class="swiper-slide feedbacks-slide uk-position-relative" href="#">
-                                                                        <div class="uk-text-center">
+                                                                        <div class="uk-text-center uk-overflow-hidden">
                                                                             <p class="uk-overflow-hidden uk-text-justify dm-color-white dm-bold-text-lg dm-font-size">
                                                                                 یسرم ،نوشزا نینک دیرخ رتدوز منکیم داهنشیپ و ما یضار یلیخ اکیف هاگشورف زا نم هصخش هب ،دوب یبوخ یلیخ دیرخ
                                                                             </p>
@@ -273,6 +273,16 @@
                                                                 <a href="" class="uk-button dm-bg-white dm-color-black dm-border-radius-xsmall dm-bold-text-lg">مشــاهده دیدگـاه</a>
                                                             </div>
                                                             <!-- Navigation Buttons -->
+                                                            <div class="navigation-container uk-position-relative">
+                                                                <!-- <div role="button" class="dm-swiper-prev uk-display-inline-block pointer">
+                                                                    <span class="ph-caret-up-bold dm-font-size-very-big"></span>
+                                                                </div>
+                                                                <div role="button" class="dm-swiper-next uk-display-inline-block pointer">
+                                                                    <span class="ph-caret-down-bold dm-font-size-very-big"></span>
+                                                                </div> -->
+                                                                <!-- <div class="swiper-button-next"></div>
+                                                                <div class="swiper-button-prev"></div> -->
+                                                            </div>
                                                         </div>
                                                         
                                                     </div>
@@ -282,14 +292,14 @@
 
                                         <!-- Order Items -->
                                         <div id="order-items-section">
-                                            <div class="order-items-container dm-padding dm-border-silver dm-border-radius-xsmall dm-bg-white">
+                                            <div class="order-items-container dm-padding dm-padding-vertical-large dm-border-silver dm-border-radius-xsmall dm-bg-white">
                                                 <div class="uk-grid-collapse uk-grid-divider uk-grid-match uk-child-width-1-1 uk-flex-middle" data-uk-grid>
                                                     <div class="order-item-box">
                                                         <div class="uk-grid-small uk-child-width-auto uk-flex-middle" data-uk-grid>
                                                             <!-- Remove Item Button -->
                                                             <div class="remove-item-section uk-visible@m">
                                                                 <span id="remove-cart-item-btn" onclick="removeItem(this)" 
-                                                                class="ph-trash-simple-bold dm-font-size-very-big dm-color-silver"></span>
+                                                                class="ph-trash-simple-bold dm-font-size-very-big dm-color-silver pointer"></span>
                                                             </div>
 
                                                             <!-- Item Image -->
@@ -346,7 +356,7 @@
                                                             <!-- Remove Item Button -->
                                                             <div class="remove-item-section uk-visible@m">
                                                                 <span id="remove-cart-item-btn" onclick="removeItem(this)" 
-                                                                class="ph-trash-simple-bold dm-font-size-very-big dm-color-silver"></span>
+                                                                class="ph-trash-simple-bold dm-font-size-very-big dm-color-silver pointer"></span>
                                                             </div>
 
                                                             <!-- Item Image -->
@@ -402,7 +412,7 @@
                                                             <!-- Remove Item Button -->
                                                             <div class="remove-item-section uk-visible@m">
                                                                 <span id="remove-cart-item-btn" onclick="removeItem(this)" 
-                                                                class="ph-trash-simple-bold dm-font-size-very-big dm-color-silver"></span>
+                                                                class="ph-trash-simple-bold dm-font-size-very-big dm-color-silver pointer"></span>
                                                             </div>
 
                                                             <!-- Item Image -->
@@ -462,8 +472,10 @@
                             </div>
 
 
-                            <!-- Cart Information Section -->
+                            <!-- Cart SideBar Information Section -->
                             <div class="cart-info-container uk-width-auto">
+
+                                <!-- Cart Information -->
                                 <div id="cart-info-section" class="dm-border-radius-xsmall dm-bg-silver dm-padding">
                                     <div class="uk-grid-small uk-grid-divider uk-child-width-1-1" data-uk-grid>
                                         <div class="info-item">
@@ -540,6 +552,135 @@
                                         </div>
                                     </div>
                                     
+                                </div>
+
+                                <!-- Cart Latest Order Section -->
+                                <div id="order-latest-section" class="dm-border-radius-xsmall dm-border-silver dm-padding uk-margin-top">
+                                    <div class="order-box-header uk-margin-small-bottom">
+                                        
+                                        <div class="order-box-title uk-grid-collapse uk-margin-remove uk-padding-remove uk-flex-middle" data-uk-grid>
+                                            <div class="uk-width-expand title">
+                                                <h3 class="order-box-title uk-h5 uk-text-right uk-margin-remove-bottom dm-bold-text-md dm-font-size">آخرین سفارشات کاربـران</h3>
+                                            </div>
+                                            <div class="uk-width-auto">
+                                                <div class="navigation-container">
+                                                    <span class="dm-button-next ph-caret-down-bold dm-font-size-very-big pointer"></span>
+                                                    <span class="dm-button-prev ph-caret-up-bold dm-font-size-very-big uk-margin-small-right pointer"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="order-box-border uk-grid-collapse uk-margin-remove uk-padding-remove" data-uk-grid>
+                                            <div class="uk-width-auto">
+                                                <span class="uk-display-inline-block dm-border-silver-buttom-filter dm-vertical-align-middle"></span>
+                                                <span class="uk-display-inline-block dm-border-first-buttom-filter dm-vertical-align-middle"></span>
+                                            </div>
+                                            <div class="uk-width-expand">
+                                                <span class="uk-display-inline-block dm-border-bottom-slider dm-vertical-align-middle uk-width-1-1"></span>
+                                            </div>
+                                        </div>
+
+                                        <!-- Order Latest Slider -->
+                                        <div class="order-swiper">
+                                            <div id="order-latest-slider" class="swiper-container">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide latest-slide uk-position-relative">
+                                                        <div class="swiper-slide-inner">
+                                                            <div class="uk-grid-small uk-child-width-auto uk-flex-middle" data-uk-grid>
+                                                                <!-- Item Image -->
+                                                                <div class="image-item-section">
+                                                                    <img class="dm-border-radius-xsmall" src="www-root/img/cart-item-img.png" alt="" data-uk-img />
+                                                                </div>
+                                                                <!-- Item Content -->
+                                                                <div class="content-item-section uk-width-expand">
+                                                                    <h2 class="uk-h5 uk-text-bold uk-margin-remove-bottom">فرش 1200 شانه قیطران طرح مهناز رنگ فیلی</h2>
+                                                                    <div class="info-item">
+                                                                        <div>
+                                                                            <span data-uk-icon="icon: info; ratio: 0.8" class="uk-icon"></span>
+                                                                            <span class="uk-margin-small-right dm-font-size-small">موجود در انبار</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="action-section uk-margin-small-top">
+                                                                        <div class="uk-grid-small uk-child-width-1-1 uk-child-width-auto@m uk-flex-middle" data-uk-grid>
+                                                                            <div>
+                                                                                <span class="dm-color-silver dm-bold-text-lg dm-font-size">توسط :</span>
+                                                                                <span class="dm-color-silver dm-bold-text-lg dm-font-size dm-color-first">عطا حیدری</span>
+                                                                            </div>
+                                                                            <div>
+                                                                                <span class="dm-color-silver dm-bold-text-md dm-font-size">سه شنبه 14 اسفند 1400</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="swiper-slide latest-slide uk-position-relative">
+                                                        <div class="swiper-slide-inner">
+                                                            <div class="uk-grid-small uk-child-width-auto uk-flex-middle" data-uk-grid>
+                                                                <!-- Item Image -->
+                                                                <div class="image-item-section">
+                                                                    <img class="dm-border-radius-xsmall" src="www-root/img/cart-item-img.png" alt="" data-uk-img />
+                                                                </div>
+                                                                <!-- Item Content -->
+                                                                <div class="content-item-section uk-width-expand">
+                                                                    <h2 class="uk-h5 uk-text-bold uk-margin-remove-bottom">فرش 1200 شانه قیطران طرح مهناز رنگ فیلی</h2>
+                                                                    <div class="info-item">
+                                                                        <div>
+                                                                            <span data-uk-icon="icon: info; ratio: 0.8" class="uk-icon"></span>
+                                                                            <span class="uk-margin-small-right dm-font-size-small">موجود در انبار</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="action-section uk-margin-small-top">
+                                                                        <div class="uk-grid-small uk-child-width-1-1 uk-child-width-auto@m uk-flex-middle" data-uk-grid>
+                                                                            <div>
+                                                                                <span class="dm-color-silver dm-bold-text-lg dm-font-size">توسط :</span>
+                                                                                <span class="dm-color-silver dm-bold-text-lg dm-font-size dm-color-first">عطا حیدری</span>
+                                                                            </div>
+                                                                            <div>
+                                                                                <span class="dm-color-silver dm-bold-text-md dm-font-size">سه شنبه 14 اسفند 1400</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide latest-slide uk-position-relative">
+                                                        <div class="swiper-slide-inner">
+                                                            <div class="uk-grid-small uk-child-width-auto uk-flex-middle" data-uk-grid>
+                                                                <!-- Item Image -->
+                                                                <div class="image-item-section">
+                                                                    <img class="dm-border-radius-xsmall" src="www-root/img/cart-item-img.png" alt="" data-uk-img />
+                                                                </div>
+                                                                <!-- Item Content -->
+                                                                <div class="content-item-section uk-width-expand">
+                                                                    <h2 class="uk-h5 uk-text-bold uk-margin-remove-bottom">فرش 1200 شانه قیطران طرح مهناز رنگ فیلی</h2>
+                                                                    <div class="info-item">
+                                                                        <div>
+                                                                            <span data-uk-icon="icon: info; ratio: 0.8" class="uk-icon"></span>
+                                                                            <span class="uk-margin-small-right dm-font-size-small">موجود در انبار</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="action-section uk-margin-small-top">
+                                                                        <div class="uk-grid-small uk-child-width-1-1 uk-child-width-auto@m uk-flex-middle" data-uk-grid>
+                                                                            <div>
+                                                                                <span class="dm-color-silver dm-bold-text-lg dm-font-size">توسط :</span>
+                                                                                <span class="dm-color-silver dm-bold-text-lg dm-font-size dm-color-first">عطا حیدری</span>
+                                                                            </div>
+                                                                            <div>
+                                                                                <span class="dm-color-silver dm-bold-text-md dm-font-size">سه شنبه 14 اسفند 1400</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

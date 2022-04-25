@@ -94,12 +94,16 @@ button {
 
 .swiper-slide {
     height: auto;
+    text-align: center;
 }
 .uk-table th , .uk-table td {
     padding: 10px !important;
     vertical-align: middle !important;
 }
 
+.dm-line-through {
+    text-decoration: line-through;
+ }
 /* General Css */
 
 /* Background and Colors */
@@ -302,12 +306,16 @@ button {
     padding: 10px;
 }
 
-.dm-padding-large {
+.dm-padding-medium {
     padding: 25px;
 }
 
-.dm-padding-xlarge {
+.dm-padding-large {
     padding: 35px;
+}
+
+.dm-padding-xlarge {
+    padding: 50px;
 }
 
 .dm-padding {
@@ -321,6 +329,35 @@ button {
 .dm-intro-btn-padding {
     padding: 7px 30px !important;
 }
+
+
+.dm-padding-vertical-xsmal {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.dm-padding-vertical-small {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.dm-padding-vertical {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.dm-padding-vertical-medium {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.dm-padding-vertical-large {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+
+
 
 .dm-margin-right-small {
     margin-right: 5px;

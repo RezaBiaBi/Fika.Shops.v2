@@ -1,0 +1,1198 @@
+<html lang="fa-IR" dir="rtl">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <title>Product ( Product Page )</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Load Uikit Css -->
+    <link rel="stylesheet" href="www-root/library/uikit/css/uikit.css">
+    <link rel="stylesheet" href="www-root/library/uikit/css/uikit.min.css">
+    <!-- <link rel="stylesheet" href="www-root/library/uikit/css/uikit-core-rtl.css"> -->
+    <!-- <link rel="stylesheet" href="www-root/library/uikit/css/uikit-rtl.css"> -->
+    <!-- Load Uikit Css -->
+
+    <!-- Load Uikit Javascript -->
+    <script src="www-root/library/uikit/js/uikit.js"></script>
+    <script src="www-root/library/uikit/js/uikit.min.js"></script>
+    <!-- Load Uikit Javascript -->
+
+    <!-- Load Remix Icon -->
+    <link rel="stylesheet" href="www-root/library/remix-icon/fonts/remixicon.css">
+    <!-- Load Remix Icon -->
+
+    <!-- Load Phosphor Icon -->
+    <link rel="stylesheet" href="www-root/library/phosphor-icon/icons.css">
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <!-- Load Phosphor Icon -->
+
+    <!-- Load Swiper Slider Css -->
+    <link rel="stylesheet" href="www-root/library/swiper-slider/css/swiper.min.css">
+    <!-- Load Swiper Slider Css -->
+
+    <!-- Load Main Css -->
+    <link rel="stylesheet" href="www-root/css/main.css">
+    <!-- Load Main Css -->
+
+    <!-- Load Index Css -->
+    <link rel="stylesheet" href="www-root/css/product.css">
+    <!-- Load Index Css -->
+</head>
+<body>
+    <!-- Header -->
+    <header id="header-section" class="uk-width-1-1 uk-padding-small">
+        <div class="uk-container uk-container-expand header-container">
+            <!-- Top Menu -->
+            <nav class="uk-navbar uk-navbar-container dm-bg-white" uk-navbar="mode: click">
+                <div id="main-logo" class="uk-navbar-right">
+                    
+                    <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon href="#offcanvas-usage" data-uk-toggle></a>
+                    <!--Logo Main-->
+                    <a class="uk-navbar-item uk-logo">
+                        <img src="www-root/img/logo.png" alt=""/>
+                        <div class="logo-type uk-display-inline-block uk-width-auto">
+                            <span class="uk-text-bolder dm-font-size">فیکا شاپ</span>
+                            <span class="uk-display-block dm-color-silver dm-font-size-small ttl">فروشگاه معتبر آنلاین</span>
+                        </div>
+                    </a>
+
+                    <!--Search Box-->
+                    <div id="nav-search" class="uk-navbar-item uk-visible@m">
+                        <form action="" autocomplete="off" method="get" class="uk-search uk-search-navbar uk-position-relative">
+                            <a class="more-search-btn" role="button"><img src="www-root/img/more-vertical.png" alt="" srcset=""></a>
+                            <input name="q" class="uk-search-input search-input uk-text-light" type="search" placeholder="جستجو در بین هزاران محصول و برند...">
+                            <button type="submit" data-uk-search-icon></button>
+                            <div class="uk-position-absolute rad-ten uk-box-shadow-medium bg-w search-container"></div>
+                        </form>
+                    </div>
+
+                </div>
+                <!--Left Navbar (NavButtons)-->
+                <div id="main-cts" class="uk-navbar-left">
+
+                    <div class="uk-hidden@m">
+                        <a class="uk-navbar-toggle" href="#" data-uk-icon="icon: search; ratio: 1.3"></a>
+
+                        <div class="uk-navbar-dropdown" uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: .header; pos: bottom-justify; boundary-align: true; offset:-1; animation: uk-animation-slide-top-medium; duration: 350">
+
+                            <div class="uk-grid-small uk-flex-middle" data-uk-grid>
+                                <div class="uk-width-expand">
+                                    <form action="" autocomplete="off" method="get" class="uk-search uk-search-navbar uk-width-1-1 uk-position-relative">
+                                        <input name="q" class="uk-search-input search-input-sm uk-text-light" type="search" placeholder="جستجو در کالاها... " autofocus>
+                                    </form>
+                                </div>
+                                <div class="uk-width-auto">
+                                    <a class="uk-navbar-dropdown-close" href="#" data-uk-close></a>
+                                </div>
+                            </div>
+
+                            <div class="rad-ten search-container-sm"></div>
+                        </div>
+                    </div>
+
+                    <div class="uk-navbar-item uk-text-center uk-visible@m">
+                        <a id="contact-btn" class="header-btns uk-margin-small-left">
+                            <span class="dm-bold-text-lg dm-color-black dm-font-size">
+                                <span>1234567</span>&ensp;<span class="dm-color-silver">021</span>
+                            </span>
+                            <span class="uk-width-auto"><img src="www-root/img/phone.png"/></span>
+                        </a>
+                        <a id="auth-btn" class="header-btns uk-margin-small-left">
+                            <span class="dm-bold-text-lg dm-color-silver dm-font-size">
+                                ورود / عضویت
+                            </span>
+                        </a>
+                        <a id="cart-btn" class="uk-position-relative">
+                            <span id="cart-count" class="dm-bold-text-lg dm-font-size uk-position-absolute">
+                                <span class="dm-color-white dm-padding-small">10</span>
+                            </span>
+                            <span class="uk-width-auto"><img src="www-root/img/cart.png"/></span>
+                        </a>
+                    </div>
+                    <form id="logout-form" asp-action="Logout" asp-controller="Profile" method="post"></form>
+
+                </div>
+            </nav>
+            <!-- Top Menu -->
+
+            <!-- Bottom Menu -->
+            <div class="uk-width-1-1 uk-margin-top menu-container menu-boundary">
+                <div class="uk-grid uk-grid-match uk-child-width-auto" uk-height-match="target: #main-menu" data-uk-grid>
+                    <div id="main-menu" class="main-menu">
+                        <div class="uk-inline dm-bg-silver">
+                            <a id="menu-btn" class="uk-position-relative pointer">
+                                <span class="uk-width-auto"><img src="www-root/img/menu-blue.png"/></span>
+                                <span class="uk-margin-small-right">دسته بندی کالاها</span>
+                                <span class="uk-float-left uk-text-left" style="margin-top: 5px;">
+                                    <img src="www-root/img/menu-nav-left.png" class=""/>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="menu" class="uk-width-expand uk-visible@m">
+                        <nav class="uk-navbar uk-padding-remove" uk-navbar>
+                            <div class="uk-navbar-right">
+                                <ul class="uk-navbar-nav">
+                                    <li class="uk-active"><a href="#">تماس باما</a></li>
+                                    <li><a href="#">درباره ما</a></li>
+                                    <li><a href="#">قوانین و مقررات</a></li>
+                                    <li><a href="#">فروشنده شوید</a></li>
+                                    <li><a href="#">سوالات متداول</a></li>
+                                </ul>
+                            </div>
+                            <div class="uk-navbar-left">
+                                <div class="uk-inline">
+                                    <a id="location-btn" class="uk-position-relative pointer">
+                                        <span class="uk-width-auto"><img src="www-root/img/address.png"/></span>
+                                        <span class="">شهر خودرا انتخاب کنید</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom Menu -->
+        </div>
+
+
+        <!-- Mobile Menu -->
+        <div id="offcanvas-usage" class="dm-bg-white" uk-offcanvas="flip: true">
+            <div class="uk-offcanvas-bar dm-bg-white">
+                <div>
+                    <h1 class="dm-color-black uk-text-bold uk-text-center">شورای اسلامی شهر کرج</h1>
+                </div>
+                <div>
+                    <div class="uk-width-1-1 dm-border-bottom-first dm-margin-top-small"></div>
+                </div>
+                <div class="uk-margin-small-top">
+                    <ul>
+                        <li class="dm-padding-very-small uk-padding-remove-horizontal dm-border-light-silver-bottom">
+                            <a href="" class="uk-display-block">
+                                <span class="ph-check-circle dm-font-size-very-big dm-vertical-align-middle dm-color-second"></span>
+                                <span class="dm-color-light-black">صفحه اصلی</span>
+                            </a>
+                        </li>
+                        <li class="dm-padding-very-small uk-padding-remove-horizontal dm-border-light-silver-bottom">
+                            <a href="" class="uk-display-block">
+                                <span class="ph-check-circle dm-font-size-very-big dm-vertical-align-middle dm-color-second"></span>
+                                <span class="dm-color-light-black">صفحه اصلی</span>
+                            </a>
+                        </li>
+                        <li class="dm-padding-very-small uk-padding-remove-horizontal dm-border-light-silver-bottom">
+                            <a href="" class="uk-display-block">
+                                <span class="ph-check-circle dm-font-size-very-big dm-vertical-align-middle dm-color-second"></span>
+                                <span class="dm-color-light-black">صفحه اصلی</span>
+                            </a>
+                        </li>
+                        <li class="dm-padding-very-small uk-padding-remove-horizontal dm-border-light-silver-bottom">
+                            <a href="" class="uk-display-block">
+                                <span class="ph-check-circle dm-font-size-very-big dm-vertical-align-middle dm-color-second"></span>
+                                <span class="dm-color-light-black">صفحه اصلی</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+    </header>
+    <!-- Header -->
+
+    
+
+
+    <!-- Main Section -->
+    <main id="main" class="uk-width-1-1 uk-padding-remove uk-margin-remove">
+
+        <!-- BreadCrumb Section -->
+        <div id="product-breadcrumb-section" class="uk-width-1-1 uk-margin-top">
+            <div class="uk-container uk-container-expand">
+                <div class="product-breadcrumb-container uk-width-1-1 dm-padding-small dm-border-light-silver dm-border-radius-xsmall">
+                    <ul class="uk-breadcrumb dm-padding-small uk-padding-remove-vertical">
+                        <li><a href="">خــانه</a></li>
+                        <li><a href="">دسته بندی</a></li>
+                        <li><span>محصول</span></li>
+                    </ul>                    
+                </div>
+            </div>
+        </div>
+        <!-- BreadCrumb Section -->
+
+        <!-- Product Content Section -->
+        <div id="product-content-section" class="uk-width-1-1 uk-margin-medium-top">
+            <div class="uk-container uk-container-expand">
+                <div class="product-content-container uk-width-1-1 dm-padding-small dm-bg-white">
+                    <div class="uk-grid-medium uk-grid-match uk-child-width-1-1" data-uk-grid>
+                        <!-- Product Gallery Section -->
+                        <div id="product-gallery" class="uk-width-auto@m">
+                            <div class="uk-grid-medium uk-width-1-1 uk-child-width-1-1" data-uk-grid>
+                                <!-- Center Image Section -->
+                                <div class="product-image-zoone uk-flex uk-flex-middle uk-flex-center uk-position-relative uk-padding-remove-horizontal dm-padding-medium dm-border-silver dm-border-radius-xsmall">
+                                    
+                                    <div class="product-image-container dm-padding-vertical-large">
+                                        <div class="uk-text-center pointer">
+                                            <img id="main-img" data-src="www-root/img/product.png" data-zoom-image="www-root/img/product.png" data-uk-img />
+                                        </div>
+                                        <div class="product-actions uk-text-center uk-position-absolute">
+                                            <ul class="uk-grid-small uk-text-center uk-width-auto uk-child-width-1-1" data-uk-grid>
+                                                <li class="uk-margin-top">
+                                                    <a href="" class="dm-border-radius-xsmall dm-border-silver" data-uk-tooltip="title: جستجو محصول; delay: 200; pos: right; animation: uk-animation-fade; duration: 150">
+                                                        <i class="ph-magnifying-glass-bold dm-font-size-very-big"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="uk-margin-top">
+                                                    <a href="" class="dm-border-radius-xsmall dm-border-silver" data-uk-tooltip="title: اشتراک گزاری; delay: 200; pos: right; animation: uk-animation-fade; duration: 150">
+                                                        <i class="ph-share-network-bold dm-font-size-very-big"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="uk-margin-top">
+                                                    <a href="" class="dm-border-radius-xsmall dm-border-silver" data-uk-tooltip="title: مقایسه; delay: 200; pos: right; animation: uk-animation-fade; duration: 150">
+                                                        <i class="ph-arrows-out-line-horizontal-bold dm-font-size-very-big"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="uk-margin-top">
+                                                    <a href="" class="dm-border-radius-xsmall dm-border-silver" data-uk-tooltip="title: نمودار قیمت; delay: 200; pos: right; animation: uk-animation-fade; duration: 150">
+                                                        <i class="ph-chart-bar-bold dm-font-size-very-big"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="product-discount-badge uk-text-center uk-position-absolute">
+                                            <div class="uk-text-center dm-vertical-align-middle dm-bg-first dm-border-radius-circle">
+                                                <span class="uk-text-center dm-bold-text-lg dm-color-white dm-font-size-very-big">30</span>
+                                                <span class="uk-text-center dm-color-white dm-font-size-big">%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Image Container -->
+                                <div id="img-container" class="dm-padding-xsmall uk-margin-small-top">
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper" data-uk-lightbox="animation: slide">
+                                            <div class="swiper-slide thumbnail pointer">
+                                                <a href="www-root/img/thumb-product.png" data-caption="2/2"> 
+                                                    <img class="swiper-lazy swiper-lazy-loaded" src="www-root/img/thumb-product.png" alt="" data-uk-img />
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide thumbnail pointer">
+                                                <a href="www-root/img/thumb-product.png" data-caption="2/2"> 
+                                                    <img class="swiper-lazy swiper-lazy-loaded" src="www-root/img/thumb-product.png" alt="" data-uk-img />
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide thumbnail pointer">
+                                                <a href="www-root/img/thumb-product.png" data-caption="2/2"> 
+                                                    <img class="swiper-lazy swiper-lazy-loaded" src="www-root/img/thumb-product.png" alt="" data-uk-img />
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- If we need scrollbar -->
+                                        <div class="swiper-scrollbar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Detail Section -->
+                        <div id="product-detail" class="uk-width-expand@m">
+                            <div class="product-detail-container uk-width-1-1 dm-bg-white">
+                                <div class="uk-grid-medium uk-width-1-1 uk-child-width-1-1" data-uk-grid>
+                                    <!-- Product Title Section -->
+                                    <div class="product-title-section">
+                                        <div class="uk-grid-collapse uk-child-width-1-1" data-uk-grid>
+                                            <div class="uk-width-expand@m">
+                                                <div class="uk-width-1-1">
+                                                    <p class="product-title uk-text-right dm-color-black dm-bold-text-lg">
+                                                        <span class="uk-display-block dm-font-size-very-big">آیپد مینی 2021 ظرفیت 64 گیگابایت</span>
+                                                        <span class="uk-display-block dm-font-size dm-color-light-silver">2021 Apple iPad Mini (64GB)</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-auto@m">
+                                                <p class="product-values uk-text-left dm-font-size-big dm-color-black dm-bold-text-lg">
+                                                    <span class="uk-display-block"><img src="www-root/img/stars.png" alt="" data-uk-img /></span>
+                                                    <span class="uk-display-block">
+                                                        <span class="dm-color-silver dm-font-size-small">(35)</span>
+                                                        <span class="dm-font-size">4.1</span>
+                                                    </span>
+                                                </p>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="uk-margin-small-top"><div class="uk-width-1-1 dm-border-silver-bottom"></div></div>
+
+                                    <!-- Product Detail Information Section -->
+                                    <div class="product-title-section">
+                                        <div class="uk-grid-collapse uk-child-width-1-1" data-uk-grid>
+                                            <!-- Product Detail Information -->
+                                            <div class="uk-width-expand@m">
+                                                <!-- Product Categories -->
+                                                <div class="product-categories-info uk-width-1-1 dm-padding-xsmall">
+                                                    <div class="uk-grid-small uk-child-width-auto" data-uk-grid>
+                                                        <span class="uk-first-column uk-flex-first dm-font-size-big dm-bold-text-md">دسـته بـندی: </span>
+                                                        <span>
+                                                            <span class="category-badge pointer" title="" role="button"> دیجـیتـال </span>
+                                                        </span>
+                                                        <span>
+                                                            <span class="category-badge pointer" title="" role="button"> تبلت </span>
+                                                        </span>
+                                                        <span>
+                                                            <span class="category-badge pointer" title="" role="button"> قاب تبلت </span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Product Detail Specs -->
+                                                <div class="product-specs uk-width-1-1 dm-padding-xsmall uk-margin-top">
+                                                    <div id="product-specs-container" class="uk-grid-collapse uk-child-width-1-1" data-uk-grid>
+                                                        <span class="specs-items uk-margin-small-top dm-color-black dm-font-size">
+                                                            <span class="specs-item-bullet dm-color-silver"></span>
+                                                            <span class="specs-item"> تراکمیس و یجروف :یطابترا یاه هکبش </span>
+                                                        </span>
+                                                        <span class="specs-items uk-margin-small-top dm-color-black dm-font-size">
+                                                            <span class="specs-item-bullet dm-color-silver"></span>
+                                                            <span class="specs-item"> تراکمیس و یجروف :یطابترا یاه هکبش </span>
+                                                        </span>
+                                                        <span class="specs-items uk-margin-small-top dm-color-black dm-font-size">
+                                                            <span class="specs-item-bullet dm-color-silver"></span>
+                                                            <span class="specs-item"> تراکمیس و یجروف :یطابترا یاه هکبش </span>
+                                                        </span>
+                                                        <span class="specs-items uk-margin-small-top dm-color-black dm-font-size">
+                                                            <span class="specs-item-bullet dm-color-silver"></span>
+                                                            <span class="specs-item"> تراکمیس و یجروف :یطابترا یاه هکبش </span>
+                                                        </span>
+                                                        <span class="specs-items uk-margin-small-top dm-color-black dm-font-size">
+                                                            <span class="specs-item-bullet dm-color-silver"></span>
+                                                            <span class="specs-item"> تراکمیس و یجروف :یطابترا یاه هکبش </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="uk-width-1-1 uk-text-right uk-margin-small-top">
+                                                        <a id="more-specs-info-btn" onclick="showMore()" role="button"
+                                                            class="uk-button uk-button-default dm-see-all-btn dm-color-first dm-border-radius-small">
+                                                            <span class="dm-font-size">+</span>
+                                                            <span class="dm-font-size-big">مشاهده بیشتر</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="uk-margin-small-top"><div class="uk-width-1-1 dm-border-silver-bottom"></div></div> -->
+
+                                                <!-- Site Features -->
+                                                <!-- TODO Implement -->
+                                            </div>
+
+                                            <!-- Product Order/Seller Information -->
+                                            <div id="product-brand-section" class="uk-width-auto@m">
+                                                <div class="uk-width-1-1 dm-padding dm-border-radius-xsmall dm-bg-silver">
+                                                    <!-- Seller/Brand Section -->
+                                                    <div class="brand-section uk-width-1-1">
+                                                        <button id="more-brand-info-btn" onclick="showMoreInfoBrand()" role="button"
+                                                            class="uk-button uk-button-default dm-font-size-very-big dm-border-radius-xsmall dm-bg-white dm-padding-small">
+                                                            <span class="uk-float-right ph-shopping-bag-bold dm-vertical-align-middle dm-color-first"></span>
+                                                            <span class="uk-float-right dm-font-size-big dm-margin-right-small uk-margin-left">تدبیر کستر هور</span>
+                                                            <span class="uk-float-left ph-caret-left-bold dm-vertical-align-middle dm-color-light-silver"></span>
+                                                        </button>
+                                                    </div>
+                                                    
+                                                    <!-- Brand Items Section -->
+                                                    <div class="brand-item uk-width-1-1 dm-color-light-silver uk-flex-middle uk-margin-small-top">
+                                                        <span class="uk-text-right dm-font-size">موجود در انبار فروشگاه</span>
+                                                    </div>
+                                                    <div class="uk-margin-small-top"><div class="uk-width-1-1 dm-border-silver-bottom-dashed"></div></div>
+                                                    <div class="brand-item uk-width-1-1 dm-color-light-silver uk-flex-middle uk-margin-small-top">
+                                                        <span class="uk-text-right dm-font-size">ارسال از 2 تا 4 روز کاری</span>
+                                                    </div>
+                                                    <div class="uk-margin-small-top"><div class="uk-width-1-1 dm-border-silver-bottom-dashed"></div></div>
+                                                    <div class="brand-item uk-width-1-1 dm-color-light-silver uk-flex-middle uk-margin-small-top">
+                                                        <span class="uk-text-right dm-font-size">
+                                                            <span class="dm-color-first">85%</span>
+                                                            <span>رضایت کاربران</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="uk-margin-small-top"><div class="uk-width-1-1 dm-border-silver-bottom-dashed"></div></div>
+                                                    <div class="brand-item uk-width-1-1 dm-color-light-silver uk-flex-middle uk-margin-small-top">
+                                                        <span class="uk-text-right dm-font-size">ضمانت اصالت کالا</span>
+                                                    </div>
+
+
+                                                    <!-- Product Pricement zone -->
+                                                    <div id="product-pricement-zone" class="uk-width-1-1 uk-margin-large-top">
+                                                        <div class="product-price dm-padding-xsmall">
+                                                            <div class="uk-text-left">
+                                                                <span class="uk-text-muted uk-text-light dm-line-through dm-font-size-big">2,000,000</span> 
+                                                                <!-- <span class="off-badge">36%</span> -->
+                                                            </div>
+                                                            <p class="dm-bold-text-xl dm-font-size-very-big uk-text-left">
+                                                                <span>1,280,000 </span> <span class="dm-font-size">تومان</span>
+                                                            </p>
+                                                        </div>
+                                                        <button class="uk-button uk-button-large uk-width-1-1 dm-font-size-very-big dm-bg-first" data-id="4" onclick="addToCart(this)">
+                                                            <span class="ph-shopping-cart-bold dm-color-white"></span>
+                                                            <span class="dm-color-white">افزودن به سبد خرید</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Product Content Section -->
+
+
+
+        <!-- Product Tabs Section -->
+        <div id="product-tabs-section" class="uk-width-1-1 uk-margin-large-top">
+            <div id="tab-container" class="uk-container uk-container-expand">
+                <div class="product-tabs-container uk-width-1-1 dm-padding-small">
+                    <!-- Tab Buttons -->
+                    <ul class="hb-tabs uk-subnav uk-subnav-pill" data-uk-switcher data-uk-sticky="offset:0; animation: uk-animation-slide-top; bottom: #tab-container;cls-active: uk-active uk-box-shadow-large">
+                        <li class="tab-btn dm-bg-silver">
+                            <a class="uk-text-center" href="#">
+                                <span class="uk-margin-small-left">
+                                    <img src="www-root/icons/jam_pencil-f.svg" alt="">
+                                </span>
+                                <span class="uk-text-center font-weight-bolder">توضیحات کالا</span>
+                            </a>
+                        </li>
+                        <li class="tab-btn dm-bg-silver">
+                            <a class="uk-text-center" href="#">
+                                <span class="uk-margin-small-left">
+                                    <img src="www-root/icons/jam_message-f.svg" alt="">
+                                </span>
+                                <span class="uk-text-center font-weight-bolder">دیـدگاه کاربـران</span>
+                            </a>
+                        </li>
+                        <li class="tab-btn dm-bg-silver latest-tab">
+                            <a class="uk-text-center" href="#">
+                                <span class="uk-margin-small-left">
+                                    <img src="www-root/icons/jam_newspaper-f-2.svg" alt="">
+                                </span>
+                                <span class="uk-text-center font-weight-bolder">مشخصات کالا</span>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Product Tab Content -->
+                    <ul class="uk-switcher tab-content-container dm-padding-large dm-bg-white dm-border-silver dm-border-radius-xsmall">
+                        <li class="tab-content">
+                            <div class="uk-width-1-1">
+                                <p class="uk-text-justify dm-color-silver dm-font-size-big">
+                                    .دریگ رارق هدافتسا دروم اساسا یحارط دوجوم یایند لها هتسویپ تالاوس یوگباوج و یلصا یاهدرواتسد ینیچفورح لماش زاین دروم نامزو دسر نایاپ هب پیات تخس طیارش و اهراکهار هئارا رد دوجوم یراوشد و مامت هک تشاد دیما ناوت یم تروص نیا رد. درک داجیا یسراف نابز رد ورشیپ گنهرف و یقالخ ناحارط صوصخلا یلع یا هنایار ناحارط یارب ار یرتشیب تخانش اهرازفا مرن اب ات دبلط یم ار ناصصختم و هعماج ناوارف تخانش هدنیآ و لاح ،هتشذگ دصرد هس و تصش رد یدایز یاهباتک. دشاب یم یدربراک یاهرازبا دوبهب فده اب عونتم یاهدربراک و زاین دروم یژولونکت یلعف طیارش یارب و تسا مزال هک نانچنآرطس و نوتس رد هلجم و همانزور هکلب نوتم و اهرگپاچ. تسا کیفارگ ناحارط زا هدافتسا اب و پاچ تعنص زا موهفمان یگداس دیلوت اب یگتخاس نتم موسپیا مرول
+                                </p>
+                            </div>
+                        </li>
+                        <li class="tab-content">
+                            <div id="comment-section" class="uk-width-1-1">
+                                <div class="uk-grid-medium uk-child-width-1-1 uk-padding-remove uk-margin-remove" data-uk-grid>
+                                    <div class="comment-form-head uk-position-relative uk-hidden">
+                                        <h2 class="uk-h5 uk-text-bold uk-margin-right"> دیدگاه و نظرات کاربران </h2>
+                                    </div>
+                                    <div class="comment-form-body uk-padding-remove">
+                                        <form id="comment-form" action="" method="POST" class="uk-grid-medium uk-grid-match uk-child-width-1-1" data-uk-grid uk-height-match="target: > .cc">
+                                            <div class="uk-width-1-2@m uk-text-center">
+                                                <div class="uk-grid-small uk-flex uk-flex-middle uk-child-width-1-1" data-uk-grid>
+                                                    <div class="uk-text-center">
+                                                        <input name="email" id="email" type="text" class="uk-input dm-bg-silver dm-border-radius-xsmall" placeholder="آدرس ایمیل خود را وارد کنید...">
+                                                    </div>
+                                                    <div class="uk-text-center">
+                                                        <input name="email" id="email" type="text" class="uk-input dm-bg-silver dm-border-radius-xsmall" placeholder="آدرس ایمیل خود را وارد کنید...">
+                                                    </div>
+                                                    <div class="uk-text-center ">
+                                                        <input name="email" id="email" type="text" class="uk-input dm-bg-silver dm-border-radius-xsmall" placeholder="آدرس ایمیل خود را وارد کنید...">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-1-2@m uk-text-center">
+                                                <div class="uk-height-1-1 uk-text-right">
+                                                    <textarea name="msg" id="msg" class="uk-input dm-bg-silver dm-border-radius-xsmall" style="min-height: 160px;" placeholder="پیام خود را وارد کنید"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-1-1 uk-flex-center@s uk-flex-left">
+                                                <button type="submit" class="uk-button uk-width-auto uk-text-center dm-bg-first dm-color-white dm-border-radius-xsmall dm-bold-text-lg dm-font-size">ارسال دیدگاه</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="dm-border-silver-bottom uk-width-1-1"></div>
+                                    <div id="comments-section" class="">
+                                        <div class="uk-grid-small uk-flex uk-flex-middle uk-child-width-1-1" data-uk-grid>
+                                            <div class="comments-list-section">
+                                                <ul class="uk-comment-list">
+                                                    <li>
+                                                        <article class="uk-comment uk-visible-toggle" tabindex="-1">
+                                                            <header class="uk-comment-header uk-position-relative">
+                                                                <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                                                                    <div class="uk-width-auto">
+                                                                        <img class="uk-comment-avatar" src="www-root/img/person.png" width="80" height="80" alt="">
+                                                                    </div>
+                                                                    <div class="uk-width-expand">
+                                                                        <h4 class="uk-comment-title uk-margin-remove"><a class="comment-author uk-link-reset dm-bold-text-md" href="#">هاشم آزادی</a></h4>
+                                                                        <p class="uk-comment-meta"><a class="comment-date uk-link-reset dm-font-size" href="#">در تاریخ 11 مرداد 1399</a></p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="uk-position-top-left uk-position-small uk-hidden-hover">
+                                                                    <a class="reply-comment-btn uk-link-muted" href="#comment-form">
+                                                                        <span class="ph-arrow-bend-up-left-bold dm-color-first"></span>
+                                                                        <span class="dm-font-size-big">پاسخ</span>
+                                                                    </a>
+                                                                </div>
+                                                            </header>
+                                                            <div class="uk-width-1-1 border-solid uk-hidden@m"></div>
+                                                            <div class="uk-comment-body uk-margin-small-top">
+                                                                <p class="uk-text-muted uk-text-center lg uk-display-block uk-text-justify">
+                                                نوتم و اهرگپاچ. تسا کیفارگ ناحارط زا هدافتسا اب و پاچ تعنص زا موهفمان یگداس دیلوت اب یگتخاس نتم موسپیا مرول
+            فده اب عونتم یاهدربراک و زاین دروم یژولونکت یلعف طیارش یارب و تسا مزال هک نانچنآرطس و نوتس رد هلجم و همانزور هکلب
+                                                                </p>
+
+                                                                <div class="uk-margin-top">
+                                                                    <form id="comment-form" action="" method="POST" class="uk-grid-small uk-child-width-1-1" data-uk-grid uk-height-match="target: > .cc">
+                                                                        <div class="uk-width-1-1 uk-text-center">
+                                                                            <div class="uk-text-right">
+                                                                                <textarea name="msg" id="msg" class="uk-input dm-bg-silver dm-border-radius-xsmall" style="min-height: 160px;" placeholder="پیام خود را وارد کنید"></textarea>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="uk-width-1-1 uk-flex-left">
+                                                                            <button type="submit" class="uk-button uk-width-auto uk-text-center dm-bg-first dm-color-white dm-border-radius-xsmall dm-bold-text-lg dm-font-size">ارسال دیدگاه</button>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                                <div class="dm-border-silver-bottom-dashed uk-margin-top uk-width-1-1"></div>
+                                                            </div>
+
+                                                        </article>
+                                                        <ul class="reply-comment-list uk-margin-top">
+                                                            <li>
+                                                                <article class="uk-comment uk-comment-primary uk-visible-toggle rad-ten border-silver" tabindex="-1">
+                                                                    <header class="uk-comment-header uk-position-relative">
+                                                                        <div class="uk-grid-medium uk-flex-middle" data-uk-grid>
+                                                                            <div class="uk-width-auto">
+                                                                                <img class="uk-comment-avatar" src="www-root/img/person.png" width="80" height="80" alt="">
+                                                                            </div>
+                                                                            <div class="uk-width-expand">
+                                                                                <h4 class="uk-comment-title uk-margin-remove"><a class="comment-author uk-link-reset" href="#">هاشم آزادی</a></h4>
+                                                                                <p class="uk-comment-meta uk-margin-small-top"><a class="comment-date uk-link-reset" href="#">در تاریخ 11 مرداد 1399</a></p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="uk-position-top-left uk-position-small uk-hidden-hover">
+                                                                            <a class="reply-comment-btn uk-link-muted" href="#comment-form">
+                                                                                <span class="ph-arrow-bend-up-left-bold dm-color-first"></span>
+                                                                                <span class="dm-font-size-big">پاسخ</span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </header>
+                                                                    <div class="uk-width-1-1 border-solid uk-hidden@m"></div>
+                                                                    <div class="uk-comment-body uk-margin-small-top">
+                                                                        <p class="uk-text-muted uk-text-center lg uk-display-block uk-text-justify">
+                                                نوتم و اهرگپاچ. تسا کیفارگ ناحارط زا هدافتسا اب و پاچ تعنص زا موهفمان یگداس دیلوت اب یگتخاس نتم موسپیا مرول
+            فده اب عونتم یاهدربراک و زاین دروم یژولونکت یلعف طیارش یارب و تسا مزال هک نانچنآرطس و نوتس رد هلجم و همانزور هکلب
+                                                                        </p>
+                                                                    </div>
+                                                                </article>
+                                                            </li>
+            
+                                                            <!-- second state -->
+                                                            <li class="reply-comment uk-margin-top">
+                                                                <div class="uk-comment uk-comment-primary border-silver rad-ten uk-visible-toggle uk-position-relative" tabindex="-1">
+                                                                    <div class="uk-grid-small uk-flex-middle" data-uk-grid>
+                                                                        <div class="comment-header uk-width-1-1@s uk-width-auto@m uk-text-right">
+                                                                            <div class="uk-comment-header uk-position-relative">
+                                                                                <div class="uk-grid-medium uk-flex uk-flex-right uk-flex-middle@m" data-uk-grid>
+                                                                                    <div class="uk-width-auto">
+                                                                                        <img class="uk-comment-avatar" src="www-root/img/person.png" width="80" height="80" alt="">
+                                                                                    </div>
+                                                                                    <div class="uk-width-expand uk-margin-small-top">
+                                                                                        <h4 class="uk-comment-title uk-margin-remove"><a class="comment-author uk-link-reset" href="#">هاشم آزادی</a></h4>
+                                                                                        <p class="uk-comment-meta uk-margin-small-top"><a class="comment-date uk-link-reset" href="#">در تاریخ 11 مرداد 1399</a></p>
+                                                                                    </div>
+                                                                                    <div class="uk-width-auto uk-visible@m">
+                                                                                        <div class="border-vertical uk-height-1-1"></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="uk-width-1-1 border-solid uk-hidden@m"></div>
+                                                                        <div class="comment-body uk-width-1-1@s uk-width-expand@m uk-margin-small-top">
+                                                                            <div class="uk-comment-body">
+                                                                                <p class="uk-text-muted uk-text-center lg uk-display-block uk-text-justify">
+                                                                                    نوتم و اهرگپاچ. تسا کیفارگ ناحارط زا هدافتسا اب و پاچ تعنص زا موهفمان یگداس دیلوت اب یگتخاس نتم موسپیا مرول
+                                                فده اب عونتم یاهدربراک و زاین دروم یژولونکت یلعف طیارش یارب و تسا مزال هک نانچنآرطس و نوتس رد هلجم و همانزور هکلب
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="uk-position-top-left uk-position-small uk-hidden-hover">
+                                                                            <a class="reply-comment-btn uk-link-muted" href="#comment-form">
+                                                                                <span class="ph-arrow-bend-up-left-bold dm-color-first"></span>
+                                                                                <span class="dm-font-size-big">پاسخ</span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                             <!-- second state -->
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tab-content">
+                            <div id="news-section" class="uk-width-1-1">
+                                <div class="uk-grid-medium uk-child-width-1-2 uk-padding-remove" data-uk-grid>
+                                    <div class="news-items uk-text-center">
+                                        <div class="news-item-box rad-ten karzar-white-bg uk-padding-small">
+                                            <div class="uk-grid-small uk-child-width-1-2 uk-padding-remove" data-uk-grid>
+                                                <div class="uk-width-auto uk-text-center">
+                                                    <div class="news-item-img uk-text-center rad-ten uk-flex uk-flex-middle">
+                                                        <img class="rad-ten" src="www-root/img/demand-bg-md.png" data-src="" alt="" data-uk-img="">
+                                                    </div>
+                                                </div>
+                                                <div class="uk-width-expand uk-text-center">
+                                                    <div class="news-contents rad-ten uk-width-1-1 uk-height-1-1 uk-margin-top">
+                                                        <div class="uk-grid-small uk-padding-small" data-uk-grid>
+                                                            <div class="uk-width-expand">
+                                                                <div class="news-title uk-margin-small-right uk-margin-small-top uk-width-1-1 uk-text-right">
+                                                                    <h2 class="uk-h3 uk-text-bold" style="font-style: normal;font-weight: 800;font-size: 16px;"> لورم ایپسوم متن ساختگی طراحان گرافیکی </h2>
+                                                                </div>
+                                                                <div class="uk-margin-small-right">
+                                                                    <div class="uk-grid-small uk-padding-remove" data-uk-grid>
+                                                                        <div class="news-tags uk-width-auto uk-text-right">
+                                                                            <span class="item-desc font-weight-normal font-size-normal color-yellow" style="padding-top: 5px;">فلان فلانی اصل جمکرانی</span>
+                                                                        </div>
+                                                                        <div class="news-btn uk-width-expand uk-text-center">
+                                                                            <div class="demand-cta-section uk-flex uk-flex-left">
+                                                                                <a href="#summary-modal" uk-toggle class="uk-button uk-button-primary uk-width-auto" style="padding: 0 20px; border-radius: 999px;font-size: 14px; font-weight: 700;">
+                                                                                    <span class="uk-text-center">خلاصه</span>
+                                                                                    <!-- <span class="uk-text-center uk-margin-small-right" data-uk-icon=""></span> -->
+                                                                                    <span class="uk-text-center uk-margin-small-right arrow-img">
+                                                                                        <img src="www-root/icons/Left Arrow 2.svg">
+                                                                                    </span>
+                                                                                </a>
+                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="news-status uk-width-1-1 uk-margin-small-right uk-text-right">
+                                                                    <span class="status uk-text-muted" style="padding-top: 5px;">
+                                                                        <span class="uk-text-center"><img src="www-root/img/status-img1.png" alt="" srcset=""></span>&ensp;
+                                                                        <span class="uk-text-muted">12/12/1400</span>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="news-items uk-text-center">
+                                        <div class="news-item-box rad-ten karzar-white-bg uk-padding-small">
+                                            <div class="uk-grid-small uk-child-width-1-2 uk-padding-remove" data-uk-grid>
+                                                <div class="uk-width-auto uk-text-center">
+                                                    <div class="news-item-img uk-text-center rad-ten uk-flex uk-flex-middle">
+                                                        <img class="rad-ten" src="www-root/img/demand-bg-md.png" data-src="" alt="" data-uk-img="">
+                                                    </div>
+                                                </div>
+                                                <div class="uk-width-expand uk-text-center">
+                                                    <div class="news-contents rad-ten uk-width-1-1 uk-height-1-1 uk-margin-top">
+                                                        <div class="uk-grid-small uk-padding-small" data-uk-grid>
+                                                            <div class="uk-width-expand">
+                                                                <div class="news-title uk-margin-small-right uk-margin-small-top uk-width-1-1 uk-text-right">
+                                                                    <h2 class="uk-h3 uk-text-bold" style="font-style: normal;font-weight: 800;font-size: 16px;"> لورم ایپسوم متن ساختگی طراحان گرافیکی </h2>
+                                                                </div>
+                                                                <div class="uk-margin-small-right">
+                                                                    <div class="uk-grid-small uk-padding-remove" data-uk-grid>
+                                                                        <div class="news-tags uk-width-auto uk-text-right">
+                                                                            <span class="item-desc font-weight-normal font-size-normal color-yellow" style="padding-top: 5px;">فلان فلانی اصل جمکرانی</span>
+                                                                        </div>
+                                                                        <div class="news-btn uk-width-expand uk-text-center">
+                                                                            <div class="demand-cta-section uk-flex uk-flex-left">
+                                                                                <a href="#summary-modal" uk-toggle class="uk-button uk-button-primary uk-width-auto" style="padding: 0 20px; border-radius: 999px;font-size: 14px; font-weight: 700;">
+                                                                                    <span class="uk-text-center">خلاصه</span>
+                                                                                    <!-- <span class="uk-text-center uk-margin-small-right" data-uk-icon=""></span> -->
+                                                                                    <span class="uk-text-center uk-margin-small-right arrow-img">
+                                                                                        <img src="www-root/icons/Left Arrow 2.svg">
+                                                                                    </span>
+                                                                                </a>
+                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="news-status uk-width-1-1 uk-margin-small-right uk-text-right">
+                                                                    <span class="status uk-text-muted" style="padding-top: 5px;">
+                                                                        <span class="uk-text-center"><img src="www-root/img/status-img1.png" alt="" srcset=""></span>&ensp;
+                                                                        <span class="uk-text-muted">12/12/1400</span>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- <li class="tab-content">Hello again! <a href="#" uk-switcher-item="next">Next item</a></li> -->
+                        <!-- <li class="tab-content">Bazinga! <a href="#" uk-switcher-item="previous">Previous item</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Product Tabs Section -->
+
+
+
+
+
+
+
+        <!-- Start Newest Products -->
+        <div id="newest-products-section" class="uk-width-1-1 uk-margin-large-top uk-margin-large-bottom">
+            <div class="uk-container uk-container-large">
+                <div class="uk-width-1-1 uk-padding-small">
+                    <div class="uk-child-width-1-1 uk-grid-collapse" data-uk-grid>
+                        
+                        <div class="uk-width-expand uk-text-center uk-text-right@m uk-flex-center uk-flex-right@m">
+                            <span class="dm-color-first uk-text-bold dm-font-size-big">جدیدترین</span>
+                            <span class="dm-font-size-big">محصولات</span>
+                        </div>
+                        <!-- Navigation Slider -->
+                        <div class="uk-width-auto navigation-container uk-text-left uk-text-center@m uk-flex-center uk-flex-left@m uk-position-relative">
+                            
+                            <div role="button" class="swiper-button-prev swiper-button-black uk-display-inline-block pointer">
+                                <!-- <span data-uk-icon="icon: chevron-right"></span> -->
+                            </div>
+                            <a class="uk-display-inline-block">
+                                <span class="">همه</span>
+                            </a>
+                            <div role="button" class="swiper-button-next swiper-button-black uk-display-inline-block pointer">
+                                <!-- <span data-uk-icon="icon: chevron-left"></span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="uk-width-1-1">
+                    <div id="newest-products" class="swiper-container product-sliders">
+                        <div class="swiper-wrapper">
+                            
+                            <div class="swiper-slide product-slide uk-padding-small uk-position-relative" href="#">
+                                <div class="uk-width-1-1">
+                                    <p class="product-title uk-text-center dm-font-size dm-color-black dm-bold-text-lg">
+                                        <span class="uk-display-block">آیپد مینی 2021 ظرفیت 64 گیگابایت</span>
+                                        <span class="uk-display-block dm-color-light-silver">2021 Apple iPad Mini (64GB)</span>
+                                    </p>
+                                </div>
+                                <div class="uk-width-1-1 uk-margin-xlarge-bottom">
+                                    <img src="www-root/img/Imageproducts.png" alt="" data-uk-img />
+                                </div>
+                                <div class="uk-width-1-1 uk-margin-top uk-position-bottom product-action">
+                                    <div class="uk-width-1-1 uk-flex uk-flex-middle" data-uk-grid>
+                                        <div class="uk-width-expand">
+                                            <p class="uk-text-right dm-font-size-big dm-color-black dm-bold-text-lg">
+                                                <!-- <span class="uk-position-absolute uk-position-top-right product-discount"><span>10 %</span></span> -->
+                                                <span class="uk-margin-remove-bottom product-discount"><span>10 %</span></span>
+                                                <span class="uk-display-block">21,350,000&ensp;<span class="dm-color-silver">تومان</span></span>
+                                            </p>
+                                        </div>
+                                        <div class="uk-width-auto uk-padding-remove-left">
+                                            <div class="dm-bg-first dm-color-white" style="padding: 10px;">
+                                                <a href="">
+                                                    <!-- <span class="uk-width-auto"><img src="www-root/img/cart.png"/></span> -->
+                                                    <img src="www-root/img/cart.png"/>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide product-slide uk-padding-small uk-position-relative" href="#">
+                                <div class="uk-width-1-1">
+                                    <p class="product-title uk-text-center dm-font-size dm-color-black dm-bold-text-lg">
+                                        <span class="uk-display-block">آیپد مینی 2021 ظرفیت 64 گیگابایت</span>
+                                        <span class="uk-display-block dm-color-light-silver">2021 Apple iPad Mini (64GB)</span>
+                                    </p>
+                                </div>
+                                <div class="uk-width-1-1 uk-margin-xlarge-bottom">
+                                    <img src="www-root/img/Imageproducts.png" alt="" data-uk-img />
+                                </div>
+                                <div class="uk-width-1-1 uk-margin-top uk-position-bottom product-action">
+                                    <div class="uk-width-1-1 uk-flex uk-flex-middle" data-uk-grid>
+                                        <div class="uk-width-expand">
+                                            <p class="uk-text-right dm-font-size-big dm-color-black dm-bold-text-lg">
+                                                <!-- <span class="uk-position-absolute uk-position-top-right product-discount"><span>10 %</span></span> -->
+                                                <span class="uk-margin-remove-bottom product-discount"><span>10 %</span></span>
+                                                <span class="uk-display-block">21,350,000&ensp;<span class="dm-color-silver">تومان</span></span>
+                                            </p>
+                                        </div>
+                                        <div class="uk-width-auto uk-padding-remove-left">
+                                            <div class="dm-bg-first dm-color-white" style="padding: 10px;">
+                                                <a href="">
+                                                    <!-- <span class="uk-width-auto"><img src="www-root/img/cart.png"/></span> -->
+                                                    <img src="www-root/img/cart.png"/>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide product-slide uk-padding-small uk-position-relative" href="#">
+                                <div class="uk-width-1-1">
+                                    <p class="product-title uk-text-center dm-font-size dm-color-black dm-bold-text-lg">
+                                        <span class="uk-display-block">آیپد مینی 2021 ظرفیت 64 گیگابایت</span>
+                                        <span class="uk-display-block dm-color-light-silver">2021 Apple iPad Mini (64GB)</span>
+                                    </p>
+                                </div>
+                                <div class="uk-width-1-1 uk-margin-xlarge-bottom">
+                                    <img src="www-root/img/Imageproducts.png" alt="" data-uk-img />
+                                </div>
+                                <div class="uk-width-1-1 uk-margin-top uk-position-bottom product-action">
+                                    <div class="uk-width-1-1 uk-flex uk-flex-middle" data-uk-grid>
+                                        <div class="uk-width-expand">
+                                            <p class="uk-text-right dm-font-size-big dm-color-black dm-bold-text-lg">
+                                                <!-- <span class="uk-position-absolute uk-position-top-right product-discount"><span>10 %</span></span> -->
+                                                <span class="uk-margin-remove-bottom product-discount"><span>10 %</span></span>
+                                                <span class="uk-display-block">21,350,000&ensp;<span class="dm-color-silver">تومان</span></span>
+                                            </p>
+                                        </div>
+                                        <div class="uk-width-auto uk-padding-remove-left">
+                                            <div class="dm-bg-first dm-color-white" style="padding: 10px;">
+                                                <a href="">
+                                                    <!-- <span class="uk-width-auto"><img src="www-root/img/cart.png"/></span> -->
+                                                    <img src="www-root/img/cart.png"/>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide product-slide uk-padding-small uk-position-relative" href="#">
+                                <div class="uk-width-1-1">
+                                    <p class="product-title uk-text-center dm-font-size dm-color-black dm-bold-text-lg">
+                                        <span class="uk-display-block">آیپد مینی 2021 ظرفیت 64 گیگابایت</span>
+                                        <span class="uk-display-block dm-color-light-silver">2021 Apple iPad Mini (64GB)</span>
+                                    </p>
+                                </div>
+                                <div class="uk-width-1-1 uk-margin-xlarge-bottom">
+                                    <img src="www-root/img/Imageproducts.png" alt="" data-uk-img />
+                                </div>
+                                <div class="uk-width-1-1 uk-margin-top uk-position-bottom product-action">
+                                    <div class="uk-width-1-1 uk-flex uk-flex-middle" data-uk-grid>
+                                        <div class="uk-width-expand">
+                                            <p class="uk-text-right dm-font-size-big dm-color-black dm-bold-text-lg">
+                                                <!-- <span class="uk-position-absolute uk-position-top-right product-discount"><span>10 %</span></span> -->
+                                                <span class="uk-margin-remove-bottom product-discount"><span>10 %</span></span>
+                                                <span class="uk-display-block">21,350,000&ensp;<span class="dm-color-silver">تومان</span></span>
+                                            </p>
+                                        </div>
+                                        <div class="uk-width-auto uk-padding-remove-left">
+                                            <div class="dm-bg-first dm-color-white" style="padding: 10px;">
+                                                <a href="">
+                                                    <!-- <span class="uk-width-auto"><img src="www-root/img/cart.png"/></span> -->
+                                                    <img src="www-root/img/cart.png"/>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide product-slide uk-padding-small uk-position-relative" href="#">
+                                <div class="uk-width-1-1">
+                                    <p class="product-title uk-text-center dm-font-size dm-color-black dm-bold-text-lg">
+                                        <span class="uk-display-block">آیپد مینی 2021 ظرفیت 64 گیگابایت</span>
+                                        <span class="uk-display-block dm-color-light-silver">2021 Apple iPad Mini (64GB)</span>
+                                    </p>
+                                </div>
+                                <div class="uk-width-1-1 uk-margin-xlarge-bottom">
+                                    <img src="www-root/img/Imageproducts.png" alt="" data-uk-img />
+                                </div>
+                                <div class="uk-width-1-1 uk-margin-top uk-position-bottom product-action">
+                                    <div class="uk-width-1-1 uk-flex uk-flex-middle" data-uk-grid>
+                                        <div class="uk-width-expand">
+                                            <p class="uk-text-right dm-font-size-big dm-color-black dm-bold-text-lg">
+                                                <!-- <span class="uk-position-absolute uk-position-top-right product-discount"><span>10 %</span></span> -->
+                                                <span class="uk-margin-remove-bottom product-discount"><span>10 %</span></span>
+                                                <span class="uk-display-block">21,350,000&ensp;<span class="dm-color-silver">تومان</span></span>
+                                            </p>
+                                        </div>
+                                        <div class="uk-width-auto uk-padding-remove-left">
+                                            <div class="dm-bg-first dm-color-white" style="padding: 10px;">
+                                                <a href="">
+                                                    <!-- <span class="uk-width-auto"><img src="www-root/img/cart.png"/></span> -->
+                                                    <img src="www-root/img/cart.png"/>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide product-slide uk-padding-small uk-position-relative" href="#">
+                                <div class="uk-width-1-1">
+                                    <p class="product-title uk-text-center dm-font-size dm-color-black dm-bold-text-lg">
+                                        <span class="uk-display-block">آیپد مینی 2021 ظرفیت 64 گیگابایت</span>
+                                        <span class="uk-display-block dm-color-light-silver">2021 Apple iPad Mini (64GB)</span>
+                                    </p>
+                                </div>
+                                <div class="uk-width-1-1 uk-margin-xlarge-bottom">
+                                    <img src="www-root/img/Imageproducts.png" alt="" data-uk-img />
+                                </div>
+                                <div class="uk-width-1-1 uk-margin-top uk-position-bottom product-action">
+                                    <div class="uk-width-1-1 uk-flex uk-flex-middle" data-uk-grid>
+                                        <div class="uk-width-expand">
+                                            <p class="uk-text-right dm-font-size-big dm-color-black dm-bold-text-lg">
+                                                <!-- <span class="uk-position-absolute uk-position-top-right product-discount"><span>10 %</span></span> -->
+                                                <span class="uk-margin-remove-bottom product-discount"><span>10 %</span></span>
+                                                <span class="uk-display-block">21,350,000&ensp;<span class="dm-color-silver">تومان</span></span>
+                                            </p>
+                                        </div>
+                                        <div class="uk-width-auto uk-padding-remove-left">
+                                            <div class="dm-bg-first dm-color-white" style="padding: 10px;">
+                                                <a href="">
+                                                    <!-- <span class="uk-width-auto"><img src="www-root/img/cart.png"/></span> -->
+                                                    <img src="www-root/img/cart.png"/>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <!-- <div class="swiper-pagination swiper-pagination-black"></div> -->
+                        <!-- Navigation -->
+                        <!-- <div class="swiper-button-next swiper-button-black"></div> -->
+                        <!-- <div class="swiper-button-prev swiper-button-black"></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Newest Products -->
+    </main>
+    <!-- Main Section -->
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer Section -->
+    <footer class="uk-width-1-1 uk-margin-large-top">
+        <div id="main-footer" class="uk-width-1-1 dm-border-top-second">
+            <div class="uk-container uk-container-large">
+                <div class="uk-child-width-1-2@m uk-child-width-1-1 uk-grid-medium uk-margin-top" data-uk-grid>
+                    <div class="uk-width-1-5">
+                        <div class="uk-child-width-1-1 uk-grid-small" data-uk-grid>
+                            <div class="">
+                                <a class="uk-navbar-item uk-text-right uk-logo uk-padding-remove-right" style="justify-content: right;">
+                                    <img src="www-root/img/logo.png" width="45" alt=""/>
+                                    <div class="logo-type uk-display-inline-block uk-width-auto">
+                                        <span class="uk-text-bolder dm-font-size">فیکا شاپ</span>
+                                        <span class="uk-display-block dm-color-silver dm-font-size-small ttl">فروشگاه معتبر آنلاین</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="">
+                                <p class="uk-text-justify dm-color-silver dm-bold-text-sm">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، یای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="uk-width-expand uk-margin-top">
+                        <div class="uk-child-width-1-3@m uk-child-width-1-1 uk-flex-left uk-grid-small" data-uk-grid>
+                            <div class="uk-flex-left uk-text-right">
+                                <img src="www-root/img/footer-link.png" />
+                                <div class="uk-display-inline-block uk-width-auto">
+                                    <span class="uk-text-bolder dm-color-first dm-font-size">لینک های مفید</span>
+                                </div>
+                            </div>
+                            <div class="uk-flex-left uk-text-right">
+                                <img src="www-root/img/footer-phone.png" />
+                                <div class="uk-display-inline-block uk-width-auto">
+                                    <span class="uk-text-bolder dm-color-first dm-font-size">ارتباط با ما</span>
+                                </div>
+                            </div>
+                            <div class="uk-flex-left uk-text-right">
+                                <img src="www-root/img/footer-copy.png" />
+                                <div class="uk-display-inline-block uk-width-auto">
+                                    <span class="uk-text-bolder dm-color-first dm-font-size">نماد ها</span>
+                                </div>
+                            </div>
+
+                            <div class="uk-width-1-1 uk-margin-top">
+                                <div id="footer-items" class="uk-width-1-1 uk-padding-small dm-bg-white dm-border-radius-small">
+                                    <div class="uk-child-width-1-3@m uk-child-width-1-1 uk-grid-divider uk-flex-right uk-text-right uk-grid-small" data-uk-grid>
+                                        <!-- Footer Links -->
+                                        <div class="uk-padding-small">
+                                            <a href="" class="uk-display-inline-block uk-width-1-1">
+                                                <span class="dm-font-size">صفحه اصلی</span>
+                                                <span class="uk-float-left dm-color-silver dm-font-size-small ttl">
+                                                    <img src="www-root/img/menu-nav-left.png" />
+                                                </span>
+                                            </a>
+                                            <a href="" class="uk-display-inline-block uk-width-1-1 uk-margin-small-top">
+                                                <span class="dm-font-size">تماس باما</span>
+                                                <span class="uk-float-left dm-color-silver dm-font-size-small ttl">
+                                                    <img src="www-root/img/menu-nav-left.png" />
+                                                </span>
+                                            </a>
+                                            <a href="" class="uk-display-inline-block uk-width-1-1 uk-margin-small-top">
+                                                <span class="dm-font-size">فروشنده شوید</span>
+                                                <span class="uk-float-left dm-color-silver dm-font-size-small ttl">
+                                                    <img src="www-root/img/menu-nav-left.png" />
+                                                </span>
+                                            </a>
+                                            <a href="" class="uk-display-inline-block uk-width-1-1 uk-margin-small-top">
+                                                <span class="dm-font-size">قوانین و مقررات</span>
+                                                <span class="uk-float-left dm-color-silver dm-font-size-small ttl">
+                                                    <img src="www-root/img/menu-nav-left.png" />
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <!-- Footer Links -->
+
+                                        <!-- Footer Contact Us -->
+                                        <div class="uk-padding-small uk-margin-small-top">
+                                            <div class="uk-child-width-1-1 uk-margin-remove-left uk-grid-small" data-uk-grid>
+                                                <div class="uk-text-right">
+                                                    <div class="uk-child-width-1-1 uk-grid-small" data-uk-grid>
+                                                        <div class="uk-width-expand@m uk-flex-right">
+                                                            <img src="www-root/img/phone.png" />
+                                                            <div class="uk-display-inline-block uk-width-auto">
+                                                                <span class="dm-bold-text-sm dm-color-silver dm-font-size">شماره تماس</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-auto@m uk-flex-left">
+                                                            <span class="dm-bold-text dm-font-size dm-color-black">021-12354879</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-text-right">
+                                                    <div class="uk-child-width-1-1 uk-grid-small" data-uk-grid>
+                                                        <div class="uk-width-expand@m uk-flex-right">
+                                                            <img src="www-root/img/email.png" />
+                                                            <div class="uk-display-inline-block uk-width-auto">
+                                                                <span class="dm-bold-text-sm dm-color-silver dm-font-size">آدرس ایمیل</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-auto@m uk-flex-left">
+                                                            <span class="dm-bold-text dm-font-size dm-color-black">info@gmail.com</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-text-right">
+                                                    <div class="uk-child-width-1-1 uk-grid-small" data-uk-grid>
+                                                        <div class="uk-width-expand@m uk-flex-right">
+                                                            <img src="www-root/img/address.png" />
+                                                            <div class="uk-display-inline-block uk-width-auto">
+                                                                <span class="dm-bold-text-sm dm-color-silver dm-font-size">آدرس دفتر</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-auto@m uk-flex-left uk-visible@m">
+                                                            <span class="dm-bold-text dm-font-size dm-color-black">تهران، شریئتی، نبش کودکان غزه</span>
+                                                        </div>
+                                                        <div class="uk-flex-left uk-hidden@m">
+                                                            <span class="dm-bold-text dm-font-size dm-color-black">تهران، شریئتی، نبش کودکان غزه</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Footer Contact Us -->
+
+                                        <!-- Footer Namads -->
+                                        <div class="uk-padding-small uk-margin-small-top">
+                                            <div class="uk-child-width-1-1 uk-child-width-auto@m uk-margin-top uk-flex-center uk-grid-small" data-uk-grid>
+                                                <div class="uk-text-center uk-flex-middle">
+                                                    <img src="www-root/img/namad1.png" class="uk-width-auto" />
+                                                </div>
+                                                <div class="uk-text-center uk-flex-middle">
+                                                    <img src="www-root/img/namad2.png" class="uk-width-auto" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Footer Namads -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Copy write -->
+            <div class="uk-container uk-container-large uk-padding-small uk-margin-top dm-border-silver-top-dashed">
+                <div class="uk-child-width-1-1 uk-grid-small" data-uk-grid>
+                    <div class="uk-width-1-2@m uk-flex-center uk-flex-right@m">
+                        <p class="dm-font-size dm-color-silver">
+                            <span class="">1385-1400</span> | 
+                            <span class="">تمام حقوق برای <span class="dm-color-first dm-bold-text-md">فیـــــکا</span> محفوظ است.</span>
+                        </p>
+                    </div>
+                    <div class="uk-width-1-2@m">
+                        <ul uk-grid class="uk-grid-small uk-flex-left uk-width-1-1">
+                            <li><a href="" class="dm-color-silver"><i class="ri-linkedin-line dm-font-size-very-big"></i></a></li>
+                            <li><a href="" class="dm-color-silver"><i class="ri-instagram-line dm-font-size-very-big"></i></a></li>
+                            <li><a href="" class="dm-color-silver"><i class="ri-youtube-line dm-font-size-very-big"></i></a></li>
+                            <li><a href="" class="dm-color-silver"><i class="ri-twitter-line dm-font-size-very-big"></i></a></li>
+                            <li><a href="" class="dm-color-silver"><i class="ri-telegram-line dm-font-size-very-big"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Copy write -->
+        </div>
+    </footer>
+    <!-- Footer Section -->
+
+<!-- Load Jquery -->
+<script src="www-root/library/jquery/jquery-3.6.0.js"></script>
+<!-- Load Jquery -->
+
+<!-- Uikit Icon Javascript -->
+<script src="www-root/library/uikit/js/uikit-icons.min.js"></script>
+<!-- Uikit Icon Javascript -->
+
+<!-- Load Swiper Slider JavaScript -->
+<script src="www-root/library/swiper-slider/js/swiper.min.js"></script>
+<!-- Load Swiper Slider JavaScript -->
+
+
+<script src="www-root/library/elevate-zoom/jquery.elevatezoom.min.js"></script>
+<!-- <script src="www-root/library/uikit/js/components/lightbox.min.js"></script> -->
+
+<!-- Load Main JavaScript -->
+<script src="www-root/js/main.js"></script>
+<!-- Load Main JavaScript -->
+
+<!-- Load Product JavaScript -->
+<script src="www-root/js/product.js"></script>
+<!-- Load Product JavaScript -->
+</body>
+</html>

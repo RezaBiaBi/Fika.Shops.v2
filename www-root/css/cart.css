@@ -22,6 +22,9 @@
 #order-items-section .action-section .cart-item-quantity{
 
 }
+#order-items-section .action-section .cart-item-quantity .btn{
+
+}
 
 #order-items-section .action-section .quantity{
     /* width: 40px; */
@@ -35,6 +38,27 @@
     color: rgba(0, 0, 0, 0.3);
 }
 
+#remove-cart-item-btn:hover,
+#order-items-section .action-section .cart-item-quantity .btn:hover {
+    color: #1e87f0;
+}
+
+
+#order-latest-slider .swiper-wrapper,
+.swiper-container .swiper-wrapper{
+    height: auto !important;
+}
+
+#order-latest-section .dm-border-bottom-slider,
+.dm-border-bottom-slider{
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    height: 1.5px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 15px;
+}
 
 
 
