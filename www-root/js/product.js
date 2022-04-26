@@ -1,3 +1,46 @@
+const ProductSlidersBreakPoint = {
+    1300: {
+        slidesPerGroup: 4,
+        slidesPerView: 5,
+        spaceBetween: 35,
+    },
+    1200: {
+        slidesPerGroup: 4,
+        slidesPerView: 5,
+        spaceBetween: 25,
+    },
+    960: {
+        slidesPerGroup: 3,
+        slidesPerView: 4,
+        spaceBetween: 30,
+    },
+    640: {
+        slidesPerGroup: 2,
+        slidesPerView: 3,
+        spaceBetween: 25,
+    },
+    550: {
+        speed: 300,
+        slidesPerGroup: 2,
+        slidesPerView: 2,
+        spaceBetween: 60,
+    },
+    420: {
+        speed: 300,
+        slidesPerGroup: 2,
+        slidesPerView: 2,
+        spaceBetween: 15,
+    },
+    340: {
+        speed: 300,
+        slidesPerGroup: 1,
+        slidesPerView: 1,
+        spaceBetween: 10,
+    }
+}
+    
+
+
 new Swiper('#img-container .swiper-container', {
     loop: false,
     lazy: true,
@@ -6,7 +49,8 @@ new Swiper('#img-container .swiper-container', {
     grabCursor: true,
     scrollbar: {
         el: '.swiper-scrollbar',
-        hide: false,
+        hide: true,
+        draggable: false,
     },
     breakpoints: {
         1200: {
@@ -32,7 +76,73 @@ new Swiper('#img-container .swiper-container', {
     }
 });
 
+new Swiper('#related-products.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+    speed: 900,
+    spaceBetween: 25,
+    slidesPerView: 1,
+    cssWidthAndHeight: true,
+    visibilityFullFit: true,
+    freeMode: false,
+    autoResize: true,
+    lazy: {
+        loadPrevNext: true,
+        loadOnTransitionStart: false
+    },
+    breakpoints: ProductSlidersBreakPoint,
+    // pagination: {
+    //     el: '#most-signed-demands .swiper-pagination',
+    //     type: 'progressbar',
+    //     clickable: true
+    // },
+    navigation: {
+        nextEl: '#related-products-section .swiper-button-next',
+        prevEl: '#related-products-section .swiper-button-prev',
+    },
+    // navigation: {
+    //     nextEl: '#most-signed-demands .hb-swiper-prev',
+    //     prevEl: '#most-signed-demands .hb-swiper-next',
+    // }
+});
 
+
+$(document).on('contextmenu', function (e) {
+    // e.preventDefault();
+});
+$(document).ready(function () {
+    setTimeout(function() {
+        randomOpenComments();
+    },1500);
+    if (window.innerWidth > 960) {
+        //var h = 0;
+        //setTimeout(function () {
+        //    h = $('#prd-detail').height();
+        //}, 20)
+        //setTimeout(function () {
+        //    $('.pg-side-left > div').height(h);
+        //    $('#img-container').css('max-height', h);
+        //    $('#img-container').mCustomScrollbar({
+        //        theme: "dark-thin",
+        //        autoHideScrollbar: true
+        //    });
+        //}, 30);
+        $("#main-img").elevateZoom({
+            zoomWindowPosition: 10,
+            zoomWindowOffetx: -120,
+            zoomWindowFadeIn: 300,
+            zoomWindowFadeOut: 300,
+            lensFadeIn: 300,
+            lensFadeOut: 300,
+            borderSize: 3,
+            borderColour: '#0183FF',
+            easing: true,
+            easingDuration: 1000,
+            cursor: 'crosshair'
+        });
+    }
+});
 
 
 

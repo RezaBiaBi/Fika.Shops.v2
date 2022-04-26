@@ -2,3 +2,43 @@
     /* background: url(windows-11-stock-official-blue-background-aesthetic-3840x2160-5777.jpg); */
     border-radius: 15px 15px 0px 15px;
 }
+
+
+#about-team-section .team-box .team-item img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+@media only screen and (max-width: 640px) {
+    #about-team-section .team-box .team-item img {
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    
+}
+
+/* Responsive */

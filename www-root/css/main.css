@@ -49,7 +49,7 @@ button {
     font-family: inherit;
 }
 
-* {
+*:not(.uk-sticky,.uk-switcher,.uk-tooltip) {
     transition: all 0.25s ease !important;
 }
 
@@ -104,6 +104,16 @@ button {
 .dm-line-through {
     text-decoration: line-through;
  }
+
+
+ .uk-subnav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 0 !important;
+    padding: 0;
+    list-style: none;
+}
 /* General Css */
 
 /* Background and Colors */
@@ -656,12 +666,14 @@ form.uk-search input{
 .dm-box-shadow{
     box-shadow: 0px 0px 24px rgba(1, 131, 255, 0.3);
 }
-#newest-products .product-slide{
+#newest-products .product-slide,
+#related-products .product-slide{
     background: #FFFFFF;
     max-height: 290px;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
-#newest-products .product-slide:hover{
+#newest-products .product-slide:hover,
+#related-products .product-slide:hover{
     background: #FFFFFF;
     box-shadow: 0px 0px 24px rgba(1, 131, 255, 0.3);
 }

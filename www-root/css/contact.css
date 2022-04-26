@@ -1,7 +1,8 @@
 #contact-information-section .contact-map-section{
-    width: 35%;
+    width: 40%;
     max-width: 40%;
     min-width: 35%;
+    min-height: 350px;
 }
 
 
@@ -47,3 +48,40 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 /* FAQ Style */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+@media only screen and (max-width: 640px) {
+    #contact-information-section .contact-map-section{
+        width: 100%;
+        max-width: 100%;
+        min-height: 400px;
+    }
+    
+    #contact-desc-section .contact-description-container{
+        padding: 20px !important;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    
+}
+
+/* Responsive */
